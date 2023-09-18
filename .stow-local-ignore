@@ -1,0 +1,4 @@
+\.git
+.gitattributes
+README.md
+node_modules
