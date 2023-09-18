@@ -1,0 +1,2 @@
+# .dotfiles
+ Ninja mac dotfiles
