@@ -5,13 +5,13 @@ return {
   opts = {
     options = {
       separator_style = "slope",
-      themable = true,
+      numbers = "ordinal",
+      show_close_icon = false,
       offsets = {
         {
           filetype = "NvimTree",
-          text = "File Explorer",
+          text = "Nvim Tree",
           text_align = "left",
-          separator = true
         }
       },
       hover = {
