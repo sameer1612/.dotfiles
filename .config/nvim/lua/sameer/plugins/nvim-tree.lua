@@ -8,22 +8,20 @@ return {
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 
-    -- change color for arrows in tree to light blue
-    vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
-
     nvimtree.setup({
       view = {
-        width = 35,
+        width = 40,
         relativenumber = true,
+        centralize_selection = true,
       },
       -- change folder arrow icons
       renderer = {
         root_folder_label = false,
         indent_markers = {
-          enable = true
+          enable = true,
         },
         icons = {
-        glyphs = {
+          glyphs = {
             default = "󰈚",
             symlink = "",
             folder = {
@@ -71,5 +69,5 @@ return {
     keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" })
     keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" })
     keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
-  end
+  end,
 }

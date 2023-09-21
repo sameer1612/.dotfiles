@@ -114,10 +114,6 @@ alias nv="nvim"
 alias vi="nvim"
 alias ls="colorls"
 
-# project folders
-alias kb="cd ~/codes/knowledge-bot"
-
-
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 export DENO_INSTALL="/Users/sameer/.deno"
@@ -137,6 +133,11 @@ eval "$(rbenv init - zsh)"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(dirname $(gem which colorls))/tab_complete.sh
+
+# Office work related configs.
+if [ -f ~/.officerc.sh ]; then
+  source ~/.officerc.sh
+fi
 
 prompt_context() {} # remove user and machine identifier
 
