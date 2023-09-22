@@ -1,15 +1,17 @@
 return {
   "nvim-telescope/telescope.nvim",
-  branch = "0.1.3",
+  tag = "0.1.3",
   dependencies = {
     "nvim-lua/plenary.nvim",
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     "nvim-tree/nvim-web-devicons",
     "debugloop/telescope-undo.nvim",
+    "jvgrootveld/telescope-zoxide",
   },
   config = function()
     local telescope = require("telescope")
     local actions = require("telescope.actions")
+    local z_utils = require("telescope._extensions.zoxide.utils")
 
     telescope.setup({
       defaults = {
@@ -20,8 +22,8 @@ return {
         },
         mappings = {
           i = {
-            ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-            ["<C-j>"] = actions.move_selection_next, -- move to next result
+            ["<C-k>"] = actions.move_selection_previous,
+            ["<C-j>"] = actions.move_selection_next,
             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
           },
         },
@@ -41,11 +43,32 @@ return {
             },
           },
         },
+        zoxide = {
+          prompt_title = "[ Walking on the shoulders of TJ ]",
+          mappings = {
+            default = {
+              after_action = function(selection)
+                print("Update to (" .. selection.z_score .. ") " .. selection.path)
+              end,
+            },
+            ["<C-s>"] = {
+              before_action = function(selection)
+                print("before C-s")
+              end,
+              action = function(selection)
+                vim.cmd.edit(selection.path)
+              end,
+            },
+            -- Opens the selected entry in a new split
+            ["<C-q>"] = { action = z_utils.create_basic_command("split") },
+          },
+        },
       },
     })
 
     telescope.load_extension("fzf")
     telescope.load_extension("undo")
+    telescope.load_extension("zoxide")
 
     local keymap = vim.keymap
 

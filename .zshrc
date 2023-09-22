@@ -140,4 +140,5 @@ if [ -f ~/.officerc.sh ]; then
 fi
 
 prompt_context() {} # remove user and machine identifier
+eval "$(zoxide init zsh)"
 
