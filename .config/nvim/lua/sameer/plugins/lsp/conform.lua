@@ -13,6 +13,7 @@ return {
       scss = { { "prettierd", "prettier" } },
       python = { "isort", "black" },
       ruby = { "rubocop" },
+      markdown = { "mdformat" },
       ["_"] = { "trim_whitespace" },
     },
     format_on_save = {

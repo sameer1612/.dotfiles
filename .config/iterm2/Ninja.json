@@ -1,5 +1,5 @@
 {
-  "Thin Strokes" : 0,
+  "Custom Directory" : "Advanced",
   "Working Directory" : "\/Users\/sameer",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
@@ -35,7 +35,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.27450981736183167
   },
-  "Blend" : 0.050000000000000003,
+  "Blend" : 0.099999999999999992,
   "Mouse Reporting" : true,
   "Cursor Boost" : 0,
   "Ansi 4 Color" : {
@@ -87,7 +87,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.85490196943283081
   },
-  "Background Image Location" : "\/Users\/sameer\/Pictures\/download.jpg",
+  "Background Image Location" : "\/Users\/sameer\/Pictures\/forest.jpg",
   "Bold Color" : {
     "Red Component" : 0.93333333730697632,
     "Color Space" : "sRGB",
@@ -103,6 +103,12 @@
     "0x33-0x200000-0x0" : {
       "Text" : "3",
       "Action" : 12
+    },
+    "0xf702-0x380000-0x7b" : {
+      "Version" : 0,
+      "Action" : 32,
+      "Text" : "",
+      "Label" : ""
     },
     "0x2f-0x200000-0x0" : {
       "Text" : "\/",
@@ -196,11 +202,9 @@
       "Text" : "[17;2~",
       "Action" : 10
     },
-    "0x19-0x60000-0x0" : {
-      "Version" : 0,
-      "Action" : 39,
-      "Text" : "",
-      "Label" : ""
+    "0xf702-0x280000-0x0" : {
+      "Text" : "b",
+      "Action" : 10
     },
     "0x36-0x200000-0x0" : {
       "Text" : "6",
@@ -242,9 +246,11 @@
       "Text" : "0x1b 0x7f",
       "Action" : 11
     },
-    "0xf702-0x280000-0x0" : {
-      "Text" : "b",
-      "Action" : 10
+    "0xf703-0x380000-0x7c" : {
+      "Version" : 1,
+      "Action" : 39,
+      "Text" : "",
+      "Label" : ""
     },
     "0x33-0x40000-0x0" : {
       "Text" : "0x1b",
@@ -254,13 +260,13 @@
       "Text" : "+",
       "Action" : 12
     },
-    "0x34-0x200000-0x0" : {
-      "Text" : "4",
-      "Action" : 12
-    },
     "0xf70d-0x20000-0x0" : {
       "Text" : "[21;2~",
       "Action" : 10
+    },
+    "0x34-0x200000-0x0" : {
+      "Text" : "4",
+      "Action" : 12
     },
     "0xf72b-0x20000-0x0" : {
       "Text" : "[1;2F",
@@ -316,21 +322,21 @@
       "Text" : "",
       "Label" : ""
     },
-    "0x2e-0x200000-0x0" : {
-      "Text" : ".",
+    "0x32-0x200000-0x0" : {
+      "Text" : "2",
       "Action" : 12
     },
     "0xf701-0x240000-0x0" : {
       "Text" : "[1;5B",
       "Action" : 10
     },
-    "0x32-0x200000-0x0" : {
-      "Text" : "2",
-      "Action" : 12
-    },
     "0xf700-0x260000-0x0" : {
       "Text" : "[1;6A",
       "Action" : 10
+    },
+    "0x2e-0x200000-0x0" : {
+      "Text" : ".",
+      "Action" : 12
     },
     "0xf703-0x240000-0x0" : {
       "Text" : "[1;5C",
@@ -372,9 +378,9 @@
       "Text" : "[20;2~",
       "Action" : 10
     },
-    "0x9-0x40000-0x0" : {
+    "0xf72d-0x20000-0x0" : {
       "Version" : 0,
-      "Action" : 32,
+      "Action" : 8,
       "Text" : "",
       "Label" : ""
     },
@@ -385,12 +391,6 @@
     "0x38-0x40000-0x0" : {
       "Text" : "0x7f",
       "Action" : 11
-    },
-    "0xf72d-0x20000-0x0" : {
-      "Version" : 0,
-      "Action" : 8,
-      "Text" : "",
-      "Label" : ""
     },
     "0x30-0x200000-0x0" : {
       "Text" : "0",
@@ -538,8 +538,8 @@
   },
   "AWDS Pane Directory" : "",
   "Blur" : false,
-  "Vertical Spacing" : 1.1000000000000001,
   "Normal Font" : "VictorMonoNFP-SemiBold 14",
+  "Vertical Spacing" : 1.1000000000000001,
   "Use Underline Color" : true,
   "Ansi 7 Color" : {
     "Red Component" : 0.66274511814117432,
@@ -554,6 +554,13 @@
   "Command" : "",
   "Terminal Type" : "xterm-256color",
   "Horizontal Spacing" : 1,
+  "Tab Color" : {
+    "Red Component" : 0.10196078431372549,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.14901960784313725,
+    "Alpha Component" : 1,
+    "Green Component" : 0.10588235294117647
+  },
   "Option Key Sends" : 2,
   "Blink Allowed" : false,
   "Minimum Contrast" : 0,
@@ -591,17 +598,17 @@
     "Alpha Component" : 1,
     "Green Component" : 0.60392159223556519
   },
-  "Use Tab Color" : false,
+  "Use Tab Color" : true,
   "Columns" : 150,
   "Unicode Normalization" : 0,
   "Visual Bell" : true,
   "ASCII Ligatures" : true,
-  "Custom Directory" : "Advanced",
   "Ansi 5 Color" : {
     "Red Component" : 0.73333334922790527,
     "Color Space" : "sRGB",
     "Blue Component" : 0.9686274528503418,
     "Alpha Component" : 1,
     "Green Component" : 0.60392159223556519
-  }
+  },
+  "Thin Strokes" : 0
 }
