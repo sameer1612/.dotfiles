@@ -25,6 +25,8 @@ return {
         "lua_ls",
         "emmet_ls",
         "pyright",
+        "graphql",
+        "ruby-lsp",
       },
       automatic_installation = true,
     })

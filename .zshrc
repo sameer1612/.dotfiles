@@ -70,8 +70,8 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  zsh-autosuggestions
+    git
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -85,9 +85,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+    export EDITOR='vim'
 else
-  export EDITOR='nvim'
+    export EDITOR='nvim'
 fi
 
 # Compilation flags
@@ -113,6 +113,7 @@ alias pip="pip3"
 alias nv="nvim"
 alias vi="nvim"
 alias ls="colorls"
+alias tr2="tree -a -L 2"
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -136,7 +137,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 
 # Office work related configs.
 if [ -f ~/.officerc.sh ]; then
-  source ~/.officerc.sh
+    source ~/.officerc.sh
 fi
 
 prompt_context() {} # remove user and machine identifier

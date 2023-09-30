@@ -28,4 +28,4 @@ opt.swapfile = false
 opt.mouse = "a"
 
 opt.undofile = true
-opt.scrolloff = 8
+opt.scrolloff = 2

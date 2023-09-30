@@ -67,43 +67,51 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
-    -- configure html server
     lspconfig["html"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
-    -- configure typescript server with plugin
     lspconfig["tsserver"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
-    -- configure css server
     lspconfig["cssls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
-    -- configure emmet language server
     lspconfig["emmet_ls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
       filetypes = { "html", "typescriptreact", "javascriptreact", "css", "scss" },
     })
 
-    -- configure python server
     lspconfig["pyright"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
       filetypes = { "python" },
     })
 
-    -- configure lua server (with special settings)
+    lspconfig["ruby_ls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      root_dir = lspconfig.util.root_pattern("Gemfile"),
+      filetypes = { "ruby" },
+    })
+
+    lspconfig["graphql"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      root_dir = lspconfig.util.root_pattern(".graphqlconfig", ".graphqlrc", "package.json"),
+      filetypes = { "graphql", "gql" },
+    })
+
     lspconfig["lua_ls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
-      settings = { -- custom settings for lua
+      settings = {
         Lua = {
           -- make the language server recognize "vim" global
           diagnostics = {

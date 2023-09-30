@@ -35,7 +35,8 @@ return {
           "vim",
           "dockerfile",
           "gitignore",
-          "python"
+          "python",
+          "graphql",
         },
         -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
         context_commentstring = {
