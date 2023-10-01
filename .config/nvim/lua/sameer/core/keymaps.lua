@@ -4,6 +4,7 @@ vim.g.mapleader = " "
 
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "0", "^", { desc = "Goto first non empty character in line" })
+keymap.set("n", "<M-o>", "o<ESC>", { desc = "Insert a new line down in normal mode" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "x", '"_x') -- disable yanking on deleting a character
 keymap.set("n", "<leader>j", "J", { desc = "Join lines" })

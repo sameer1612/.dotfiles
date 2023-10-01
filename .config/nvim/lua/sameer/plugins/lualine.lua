@@ -9,7 +9,7 @@ return {
       },
       sections = {
         lualine_x = {
-          { "encoding" },
+          { "datetime" },
           { "fileformat" },
           { "filetype" },
         },

@@ -94,10 +94,10 @@ return {
       filetypes = { "python" },
     })
 
-    lspconfig["ruby_ls"].setup({
+    lspconfig["solargraph"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
-      root_dir = lspconfig.util.root_pattern("Gemfile"),
+      root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
       filetypes = { "ruby" },
     })
 

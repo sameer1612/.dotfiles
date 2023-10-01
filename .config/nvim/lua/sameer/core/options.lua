@@ -29,3 +29,11 @@ opt.mouse = "a"
 
 opt.undofile = true
 opt.scrolloff = 2
+
+vim.diagnostic.config({
+  float = {
+    source = "always",
+    show_header = true,
+    border = "rounded",
+  },
+})
