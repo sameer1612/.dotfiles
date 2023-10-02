@@ -1,0 +1,112 @@
+" Enable line numbers and relative line numbers
+set number
+set relativenumber
+
+" Set tab width and enable auto-indentation
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set autoindent
+set smartindent
+
+" Disable line wrapping
+set nowrap
+
+" Enable case-insensitive searching with smart case
+set ignorecase
+set smartcase
+
+" Highlight the current line
+set cursorline
+
+" Enable termguicolors for better color support
+set termguicolors
+
+" Set the background to dark
+set background=dark
+
+" Always show the sign column
+set signcolumn=yes
+
+" Configure backspace behavior
+set backspace=indent,eol,start
+
+" Enable clipboard support (use unnamedplus)
+set clipboard+=unnamedplus
+
+" Open new splits to the right and below
+set splitright
+set splitbelow
+
+" Disable swap file creation
+set noswapfile
+
+" Enable the mouse in all modes
+set mouse=a
+
+" Enable undofile support
+set undofile
+
+" Set the scrolloff to 2 lines
+set scrolloff=2
+
+
+" Key mappings
+let mapleader = " "
+
+" Exit insert mode with 'jk'
+inoremap jk <Esc>
+
+" Go to the first non-empty character in the line
+nnoremap 0 ^
+
+" Insert a new line below in normal mode
+nnoremap <M-o> o<Esc>
+
+" Clear search highlights
+nnoremap <leader>nh :nohl<CR>
+
+" Disable yanking when deleting a character
+nnoremap x "_x
+
+" Join lines
+nnoremap <leader>j J
+
+" Move 5 lines down
+nnoremap J 5j
+
+" Move 5 lines up
+nnoremap K 5k
+
+" Move line up
+nnoremap <M-j> :m .+1<CR>==
+nnoremap <M-k> :m .-2<CR>==
+
+" Move line up (visual mode)
+vnoremap <M-j> :m '>+1<CR>gv=gv
+vnoremap <M-k> :m '<-2<CR>gv=gv
+
+" Write buffer
+nnoremap <leader>w :w<CR>
+
+" Close neovim
+nnoremap <leader>qq :qa<CR>
+
+" Window management
+nnoremap <leader>sv <C-w>v
+nnoremap <leader>sh <C-w>s
+nnoremap <leader>se <C-w>=
+nnoremap <leader>sx :close<CR>
+
+" Select left split
+nnoremap <C-h> <C-w>h
+
+" Select lower split
+nnoremap <C-j> <C-w>j
+
+" Select upper split
+nnoremap <C-k> <C-w>k
+
+" Select right split
+nnoremap <C-l> <C-w>l
+
