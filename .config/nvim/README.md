@@ -1,3 +1,3 @@
 # NinjaVim
 
-> Level 999 neovim setup.
+> Level 9999 neovim setup.
