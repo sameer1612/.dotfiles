@@ -114,6 +114,7 @@ alias nv="nvim"
 alias vi="nvim"
 alias ls="colorls"
 alias tr2="tree -a -L 2"
+alias cls="clear"
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -143,3 +144,4 @@ fi
 prompt_context() {} # remove user and machine identifier
 eval "$(zoxide init zsh)"
 
+bindkey '^[^I' autosuggest-accept

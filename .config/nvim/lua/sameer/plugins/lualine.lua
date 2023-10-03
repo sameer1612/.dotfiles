@@ -9,7 +9,6 @@ return {
       },
       sections = {
         lualine_x = {
-          { "datetime" },
           { "filetype" },
           {
             require("noice").api.status.mode.get,
