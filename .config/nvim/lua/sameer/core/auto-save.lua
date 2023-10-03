@@ -8,5 +8,5 @@ return {
       autocmd BufLeave * silent! w
     augroup END
   ]])
-  end
+  end,
 }
