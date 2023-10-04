@@ -1,3 +1,0 @@
-[submodule ".config/nvim"]
-	path = .config/nvim
-	url = https://github.com/sameer1612/ninja-vim
