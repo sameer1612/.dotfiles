@@ -9,12 +9,9 @@ return {
       textobjects = {
         select = {
           enable = true,
-
-          -- Automatically jump forward to textobj, similar to targets.vim
           lookahead = true,
 
           keymaps = {
-            -- You can use the capture groups defined in textobjects.scm
             ["a="] = { query = "@assignment.outer", desc = "Select outer part of an assignment region" },
             ["i="] = { query = "@assignment.inner", desc = "Select inner part of an assignment region" },
 
@@ -27,8 +24,8 @@ return {
             ["al"] = { query = "@loop.outer", desc = "Select outer part of a loop region" },
             ["il"] = { query = "@loop.inner", desc = "Select inner part of a loop region" },
 
-            ["ab"] = { query = "@block.outer", desc = "Select outer part of a block region" }, -- overrides default text object block of parenthesis to parenthesis
-            ["ib"] = { query = "@block.inner", desc = "Select inner part of a block region" }, -- overrides default text object block of parenthesis to parenthesis
+            ["ab"] = { query = "@block.outer", desc = "Select outer part of a block region" },
+            ["ib"] = { query = "@block.inner", desc = "Select inner part of a block region" },
 
             ["am"] = { query = "@function.outer", desc = "Select outer part of a function region" },
             ["im"] = { query = "@function.inner", desc = "Select inner part of a function region" },
@@ -38,9 +35,10 @@ return {
           },
           include_surrounding_whitespace = false,
         },
+
         move = {
           enable = true,
-          set_jumps = true, -- whether to set jumps in the jumplist
+          set_jumps = true,
           goto_next_start = {
             ["]m"] = "@function.outer",
             ["]c"] = "@class.outer",
@@ -64,6 +62,7 @@ return {
             ["[i"] = "@conditional.inner",
           },
         },
+
         swap = {
           enable = true,
           swap_next = {
@@ -75,5 +74,13 @@ return {
         },
       },
     })
+
+    local ts_repeat_move = require("nvim-treesitter.textobjects.repeatable_move")
+    vim.keymap.set({ "n", "x", "o" }, ";", ts_repeat_move.repeat_last_move)
+    vim.keymap.set({ "n", "x", "o" }, ",", ts_repeat_move.repeat_last_move_opposite)
+    vim.keymap.set({ "n", "x", "o" }, "f", ts_repeat_move.builtin_f)
+    vim.keymap.set({ "n", "x", "o" }, "F", ts_repeat_move.builtin_F)
+    vim.keymap.set({ "n", "x", "o" }, "t", ts_repeat_move.builtin_t)
+    vim.keymap.set({ "n", "x", "o" }, "T", ts_repeat_move.builtin_T)
   end,
 }
