@@ -16,7 +16,6 @@ opt.smartcase = true
 
 opt.cursorline = true
 opt.termguicolors = true
-opt.background = "dark"
 opt.signcolumn = "yes"
 opt.backspace = "indent,eol,start"
 opt.clipboard:append("unnamedplus")
@@ -29,11 +28,3 @@ opt.mouse = "a"
 
 opt.undofile = true
 opt.scrolloff = 2
-
-vim.diagnostic.config({
-  float = {
-    source = "always",
-    show_header = true,
-    border = "rounded",
-  },
-})

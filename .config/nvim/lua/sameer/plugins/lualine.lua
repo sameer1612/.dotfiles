@@ -5,7 +5,7 @@ return {
     local lualine = require("lualine")
     lualine.setup({
       options = {
-        theme = "tokyonight",
+        theme = "gruvbox-material",
       },
       sections = {
         lualine_x = {

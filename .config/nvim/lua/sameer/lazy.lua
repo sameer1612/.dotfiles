@@ -11,13 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup(
-  {
-    { import = "sameer.plugins" },
-    { import = "sameer.plugins.lsp" }
-  },
-  {
-    install = { colorscheme = { "tokyonight-night" } },
-    change_detection = { notify = false }
-  }
-)
+require("lazy").setup({
+  { import = "sameer.plugins" },
+  { import = "sameer.plugins.lsp" },
+}, {
+  install = { colorscheme = { "gruvbox" } },
+  change_detection = { notify = false },
+})
