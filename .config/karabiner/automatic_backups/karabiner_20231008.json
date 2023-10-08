@@ -64,7 +64,7 @@
                             },
                             "to": [
                                 {
-                                    "apple_vendor_top_case_key_code": "keyboard_fn"
+                                    "key_code": "f11"
                                 }
                             ]
                         },
