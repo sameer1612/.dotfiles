@@ -28,3 +28,4 @@ opt.mouse = "a"
 
 opt.undofile = true
 opt.scrolloff = 2
+opt.foldcolumn = "1"
