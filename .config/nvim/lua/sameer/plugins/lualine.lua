@@ -1,3 +1,7 @@
+local function maximize_status()
+  return vim.t.maximized and "   " or ""
+end
+
 return {
   "nvim-lualine/lualine.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -8,6 +12,7 @@ return {
         theme = "gruvbox-material",
       },
       sections = {
+        lualine_c = { { "filename" }, { maximize_status } },
         lualine_x = {
           { "filetype" },
           {
