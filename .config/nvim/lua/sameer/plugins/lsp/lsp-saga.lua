@@ -13,6 +13,7 @@ return {
       diagnostic = {
         extend_relatedInformation = true,
         extend_gitsigns = true,
+        show_source = true,
       },
       symbol_in_winbar = {
         enable = false,

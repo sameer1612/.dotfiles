@@ -40,9 +40,9 @@ return {
         "eslint_d",
         "isort",
         "black",
-        "pylint",
         "eslint_d",
         "rubocop",
+        "ruff",
       },
 
       automatic_installation = true,
