@@ -15,7 +15,7 @@ return {
     telescope.setup({
       defaults = {
         path_display = { "truncate " },
-        file_ignore_patterns = { "node_modules" },
+        file_ignore_patterns = { "node_modules", "__pycache__" },
         layout_config = {
           width = 0.75,
         },

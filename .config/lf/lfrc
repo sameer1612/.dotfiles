@@ -52,7 +52,7 @@ map A push %mkdir<space>  # Make new directory
 map zl :set number!; set relativenumber!
 
 # Additional mappings of some existing commands
-map <enter> smart-open
+map <enter> open
 map I       set hidden!
 
 # Mappings for custom functions
@@ -89,7 +89,7 @@ cmd extract ${{
 }}
 
 # Open with -------------------------------------------------------------------
-cmd smart-open &{{
+cmd open &{{
     case $(file --mime-type -Lb $f) in
         text/*) lf -remote "send $id \$nvim \$fx";;
         *) for f in $fx; do open $f > /dev/null 2> /dev/null & done;;
