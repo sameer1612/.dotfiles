@@ -1,1 +1,23 @@
-{"title":"Capslock Toolbox","rules":[{"description":"Caps Lock -> Escape/Control","manipulators":[{"type":"basic","from":{"key_code":"caps_lock"},"to":[{"repeat":false,"key_code":"left_control","modifiers":["left_control"]}],"to_if_alone":[{"repeat":false,"key_code":"escape"}]}]}]}
+{
+  "title": "Capslock Toolbox",
+  "rules": [
+    {
+      "description": "Caps Lock -> Escape/Control",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "caps_lock" },
+          "to": [
+            {
+              "repeat": false,
+              "key_code": "left_control",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "to_if_alone": [{ "repeat": false, "key_code": "escape" }]
+        }
+      ]
+    }
+  ]
+}
+
