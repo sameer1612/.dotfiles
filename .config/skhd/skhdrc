@@ -1,3 +1,5 @@
+#  Docs:
+#
 #  NOTE(koekeishiya): A list of all built-in modifier and literal keywords can
 #                     be found at https://github.com/koekeishiya/skhd/issues/1
 #
@@ -119,12 +121,12 @@
 
 # Real configuration
 
-ctrl + shift - j : yabai -m window --focus south
-ctrl + shift - k : yabai -m window --focus north
-ctrl + shift - h : yabai -m window --focus west
-ctrl + shift - l : yabai -m window --focus east
+# ctrl + shift - j : yabai -m window --focus south
+# ctrl + shift - k : yabai -m window --focus north
+# ctrl + shift - h : yabai -m window --focus west
+# ctrl + shift - l : yabai -m window --focus east
 
-ctrl + shift - n : yabai -m space --rotate 270
+ctrl + shift - r : yabai -m space --rotate 270
 ctrl + shift - y : yabai -m space --mirror y-axis
 ctrl + shift - x : yabai -m space --mirror x-axis
 
@@ -132,3 +134,10 @@ ctrl + shift - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
 ctrl + shift - m : yabai -m window --toggle zoom-fullscreen
 
 ctrl + shift - e : yabai -m space --balance
+
+ctrl + shift - n : yabai -m window --display east; yabai -m display --focus east;
+ctrl + shift - p : yabai -m window --display west; yabai -m display --focus west;
+
+ctrl + shift - q : yabai --stop-service
+ctrl + shift - s : yabai --start-service
+
