@@ -1,10 +1,10 @@
 # .dotfiles
- Ninja mac dotfiles
+> Ninja mac dotfiles, custom tailored for awesomeness.
 
 <img width="2056" alt="yabai-splits" src="https://github.com/sameer1612/.dotfiles/assets/39580073/94a5d136-0773-4ed8-ae88-333cd9e035d8">
 
-
-Includes sane configurations for following:
+---
+## Includes sane configurations for the following:
 
 1. Neovim
 2. Zsh (Oh-my-ZSH)
