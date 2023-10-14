@@ -27,4 +27,6 @@ opt.swapfile = false
 opt.mouse = "a"
 
 opt.undofile = true
-opt.scrolloff = 2
+opt.undodir = vim.env.HOME .. "/.undodir"
+
+opt.scrolloff = 4
