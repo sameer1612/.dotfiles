@@ -9,8 +9,11 @@ return {
 
     nvimtree.setup({
       view = {
-        width = 40,
+        width = 60,
         centralize_selection = true,
+      },
+      update_focused_file = {
+        enable = true,
       },
       renderer = {
         root_folder_label = false,
