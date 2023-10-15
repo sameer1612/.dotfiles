@@ -1,32 +1,27 @@
 local opt = vim.opt
 
-opt.relativenumber = true
-opt.number = true
-
-opt.tabstop = 2
-opt.shiftwidth = 2
-opt.expandtab = true
 opt.autoindent = true
-opt.smartindent = true
-
-opt.wrap = false
-
-opt.ignorecase = true
-opt.smartcase = true
-
-opt.cursorline = true
-opt.termguicolors = true
-opt.signcolumn = "yes"
 opt.backspace = "indent,eol,start"
 opt.clipboard:append("unnamedplus")
-
-opt.splitright = true
-opt.splitbelow = true
-
-opt.swapfile = false
+opt.cursorline = true
+opt.expandtab = true
+opt.ignorecase = true
 opt.mouse = "a"
-
-opt.undofile = true
-opt.undodir = vim.env.HOME .. "/.undodir"
-
+opt.number = true
+opt.relativenumber = true
 opt.scrolloff = 4
+opt.shiftwidth = 2
+opt.showmode = false
+opt.signcolumn = "yes"
+opt.smartcase = true
+opt.smartindent = true
+opt.spelllang = { "en" }
+opt.splitbelow = true
+opt.splitright = true
+opt.swapfile = false
+opt.tabstop = 2
+opt.termguicolors = true
+opt.undodir = vim.env.HOME .. "/.undodir"
+opt.undofile = true
+opt.undolevels = 100
+opt.wrap = false
