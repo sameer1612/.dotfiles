@@ -5,6 +5,8 @@ opt.backspace = "indent,eol,start"
 opt.clipboard:append("unnamedplus")
 opt.cursorline = true
 opt.expandtab = true
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.ignorecase = true
 opt.mouse = "a"
 opt.number = true
