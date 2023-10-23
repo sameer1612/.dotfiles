@@ -16,7 +16,7 @@ yabai -m config                                 \
     active_window_opacity        1.0            \
     auto_balance                 off            \
     bottom_padding               06             \
-    focus_follows_mouse          autofocus      \
+    focus_follows_mouse          autoraise      \
     insert_feedback_color        0xffd75f5f     \
     layout                       bsp            \
     left_padding                 06             \
