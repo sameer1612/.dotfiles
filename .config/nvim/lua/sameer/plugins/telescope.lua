@@ -62,5 +62,6 @@ return {
     keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
     keymap.set("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "Find symbols in the file" })
     keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>", { desc = "Find undo history" })
+    keymap.set("n", "<leader>fp", "<cmd>Telescope prosession<cr>", { desc = "Find sessions" })
   end,
 }
