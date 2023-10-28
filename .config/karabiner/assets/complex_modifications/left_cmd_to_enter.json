@@ -1,13 +1,13 @@
 {
-  "title": "Right command to Enter",
+  "title": "Left command -> Enter",
   "rules": [
     {
-      "description": "Right command to Enter",
+      "description": "Left command -> Enter",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "right_command",
+            "key_code": "left_command",
             "modifiers": {
               "optional": ["any"]
             }
@@ -19,7 +19,7 @@
           ],
           "to_if_held_down": [
             {
-              "key_code": "right_command"
+              "key_code": "left_command"
             }
           ],
           "parameters": {
