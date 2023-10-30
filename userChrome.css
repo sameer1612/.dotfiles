@@ -1,0 +1,81 @@
+.titlebar-buttonbox-container {
+  display: none !important;
+}
+
+#window-controls {
+  display: none;
+}
+
+.titlebar-spacer {
+  width: 0 !important;
+}
+
+:root {
+  --tab-max-height: 24px !important;
+  --tab-min-height: 0 !important;
+  --urlbar-toolbar-height: var(--tab-max-height) !important;
+}
+
+#nav-bar,
+.toolbar-items,
+.titlebar-buttonbox-container,
+.tab-content,
+.tab-background,
+.tab-label-container {
+  height: var(--tab-max-height);
+}
+
+.tab-background {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  background-image: none;
+}
+
+.tab-secondary-label {
+  font-size: 0.5em !important;
+  margin: -0.6em 0 0.5em !important;
+}
+
+#nav-bar toolbaritem,
+#nav-bar toolbarbutton {
+  --focus-outline: none;
+}
+
+.browser-toolbar {
+  font-size: smaller !important;
+}
+
+#tracking-protection-icon-container {
+  display: none;
+}
+
+#identity-icon {
+  width: 75% !important;
+  margin: auto !important;
+}
+
+#identity-icon-label {
+  display: none;
+}
+
+#urlbar-background {
+  background: #242424 !important;
+}
+
+#identity-icon-box {
+  background: transparent !important;
+  padding-inline: 4px !important;
+}
+
+.toolbarbutton-icon {
+  scale: 90% !important;
+}
+
+#star-button-box {
+  display: none !important;
+}
+
+.tab-icon-image {
+  scale: 90%;
+}
