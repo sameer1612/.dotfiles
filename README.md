@@ -18,3 +18,4 @@
 10. LF File Manager
 11. Zed
 12. Tmux
+13. Firefox
