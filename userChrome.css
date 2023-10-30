@@ -25,6 +25,10 @@
   height: var(--tab-max-height);
 }
 
+#alltabs-button {
+  display: none !important;
+}
+
 .tab-background {
   margin: 0 !important;
   border-radius: 0 !important;
