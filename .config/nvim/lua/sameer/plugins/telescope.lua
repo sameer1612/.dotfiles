@@ -6,6 +6,8 @@ return {
     "nvim-tree/nvim-web-devicons",
     "debugloop/telescope-undo.nvim",
     "nvim-telescope/telescope-media-files.nvim",
+    "tpope/vim-obsession",
+    "dhruvasagar/vim-prosession",
   },
   config = function()
     local telescope = require("telescope")
@@ -46,6 +48,7 @@ return {
     telescope.load_extension("fzf")
     telescope.load_extension("undo")
     telescope.load_extension("media_files")
+    telescope.load_extension("prosession")
 
     local keymap = vim.keymap
 
