@@ -38,9 +38,11 @@ yabai -m config                                 \
     window_origin_display        default        \
     window_placement             second_child   \
     window_shadow                off            \
+    winodow_topmost              on             \
     window_zoom_persist          on             \
 
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
 
 echo "yabai configuration loaded.."

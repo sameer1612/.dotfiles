@@ -12,8 +12,8 @@ ctrl + shift - m : yabai -m window --toggle zoom-fullscreen
 
 ctrl + shift - e : yabai -m space --balance
 
-ctrl + shift - n : yabai -m window --display east; yabai -m display --focus east;
-ctrl + shift - p : yabai -m window --display west; yabai -m display --focus west;
+ctrl + shift - n : yabai -m window --display north; yabai -m display --focus north;
+ctrl + shift - p : yabai -m window --display south; yabai -m display --focus south;
 
 ctrl + shift - q : yabai --stop-service
 ctrl + shift - s : yabai --start-service
