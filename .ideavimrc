@@ -31,28 +31,26 @@ set nowrap
 " Keymaps
 let mapleader = " "
 
-inoremap jk <ESC> " Exit insert mode with jk
+inoremap jk <ESC>
 
-nnoremap 0 ^ " Goto first non-empty character in line
-nnoremap <C-h> <C-w>h " Select left split
-nnoremap <C-j> <C-w>j " Select lower split
-nnoremap <C-k> <C-w>k " Select upper split
-nnoremap <C-l> <C-w>l " Select right split
-nnoremap <M-down> :m .+1<CR>== " Move line up
-nnoremap <M-o> o<ESC> " Insert a new line down in normal mode
-nnoremap <M-up> :m .-2<CR>== " Move line down
-nnoremap <leader>nh :nohl<CR> " Clear search highlights
-nnoremap <leader>j J " Join lines
-nnoremap <leader>qq :qa<CR> " Close neovim
-nnoremap <leader>se <C-w>= " Make splits equal size
-nnoremap <leader>sh <C-w>s " Split window horizontally
-nnoremap <leader>sv <C-w>v " Split window vertically
-nnoremap <leader>sx :close<CR> " Close current split
-nnoremap <leader>w :w<CR> " Write buffer
-nnoremap J 5j " Move 5 lines down
-nnoremap K 5k " Move 5 lines up
-nnoremap j v:count == 0 ? 'gj' : 'j' " Move vertically
-nnoremap k v:count == 0 ? 'gk' : 'k' " Move vertically
+nnoremap 0 ^ 
+nnoremap <C-h> <C-w>h 
+nnoremap <C-j> <C-w>j 
+nnoremap <C-k> <C-w>k 
+nnoremap <C-l> <C-w>l 
+nnoremap <M-down> :m .+1<CR>== 
+nnoremap <M-o> o<ESC> 
+nnoremap <M-up> :m .-2<CR>== 
+nnoremap <leader>nh :nohl<CR> 
+nnoremap <leader>j J 
+nnoremap <leader>qq :qa<CR> 
+nnoremap <leader>se <C-w>= 
+nnoremap <leader>sh <C-w>s 
+nnoremap <leader>sv <C-w>v 
+nnoremap <leader>sx :close<CR> 
+nnoremap <leader>w :w<CR> 
+nnoremap J 5j 
+nnoremap K 5k 
 
-vnoremap <M-k> :m '<-2<CR>gv=gv " Move line down in visual mode
-vnoremap <M-k> :m '>+1<CR>gv=gv " Move line up in visual mode
+vnoremap <M-k> :m '<-2<CR>gv=gv 
+vnoremap <M-k> :m '>+1<CR>gv=gv 
