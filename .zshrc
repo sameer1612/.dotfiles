@@ -159,3 +159,5 @@ bindkey '^[^I' autosuggest-accept
 PROMPT='%{$fg[cyan]%}%c$(git_prompt_info) %(!.%{$fg_bold[red]%}#.%{$fg_bold[red]%}❯%{$fg_bold[yellow]%}❯%{$fg_bold[green]%}❯)%{$reset_color%} '
 
 source ~/.config/lf/scripts/lfcd.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
