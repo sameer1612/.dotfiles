@@ -29,6 +29,7 @@ return {
         "pyright",
         "graphql",
         "solargraph",
+        "angularls",
       },
       automatic_installation = true,
     })
