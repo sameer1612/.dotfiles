@@ -4,10 +4,14 @@ set backspace=indent,eol,start
 set clipboard+=unnamedplus
 set cursorline
 set expandtab
-set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
+set hlsearch
 set ignorecase
+set inccommand=nosplit
+set incsearch
 set mouse=a
+set noerrorbells
+set noswapfile
+set nowrap
 set number
 set relativenumber
 set scrolloff=4
@@ -19,38 +23,42 @@ set smartindent
 set spelllang=en
 set splitbelow
 set splitright
-set noswapfile
 set tabstop=2
 set termguicolors
 set undodir=$HOME/.undodir
 set undofile
 set undolevels=100
-set nowrap
+set visualbell
 
+" Plugins
+set NERDTree
+set ReplaceWithRegister
+set commentary
+set easymotion
+set ideajoin
+set surround
 
 " Keymaps
 let mapleader = " "
 
 inoremap jk <ESC>
+nnoremap 0 ^ nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <M-o> o<ESC>
+nnoremap <leader>ee :NERDTreeToggle<CR>
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fs :action GotoSymbol<CR>
+nnoremap <leader>j J
+nnoremap <leader>nh :nohl<CR>
+nnoremap <leader>qq :qa<CR>
+nnoremap <leader>se <C-w>=
+nnoremap <leader>sh <C-w>s
+nnoremap <leader>sv <C-w>v
+nnoremap <leader>sx :close<CR>
+nnoremap <leader>w :w<CR>
+nnoremap J 5j
+nnoremap K 5k
+nnoremap gh K
 
-nnoremap 0 ^ 
-nnoremap <C-h> <C-w>h 
-nnoremap <C-j> <C-w>j 
-nnoremap <C-k> <C-w>k 
-nnoremap <C-l> <C-w>l 
-nnoremap <M-down> :m .+1<CR>== 
-nnoremap <M-o> o<ESC> 
-nnoremap <M-up> :m .-2<CR>== 
-nnoremap <leader>nh :nohl<CR> 
-nnoremap <leader>j J 
-nnoremap <leader>qq :qa<CR> 
-nnoremap <leader>se <C-w>= 
-nnoremap <leader>sh <C-w>s 
-nnoremap <leader>sv <C-w>v 
-nnoremap <leader>sx :close<CR> 
-nnoremap <leader>w :w<CR> 
-nnoremap J 5j 
-nnoremap K 5k 
-
-vnoremap <M-k> :m '<-2<CR>gv=gv 
-vnoremap <M-k> :m '>+1<CR>gv=gv 
