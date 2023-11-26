@@ -5,6 +5,7 @@ set clipboard+=unnamedplus
 set cursorline
 set expandtab
 set hlsearch
+set idearefactormode=keep
 set ignorecase
 set inccommand=nosplit
 set incsearch
@@ -40,6 +41,8 @@ set surround
 
 " Keymaps
 let mapleader = " "
+let g:NERDTreeMapActivateNode = 'l'
+let g:NERDTreeMapJumpParent = 'h'
 
 inoremap jk <ESC>
 nnoremap 0 ^ nnoremap <C-h> <C-w>h
