@@ -52,6 +52,7 @@ nnoremap <C-l> <C-w>l
 nnoremap <M-o> o<ESC>
 nnoremap <leader>ee :NERDTreeToggle<CR>
 nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fg :action FindInPath<CR>
 nnoremap <leader>fs :action GotoSymbol<CR>
 nnoremap <leader>j J
 nnoremap <leader>nh :nohl<CR>
@@ -64,4 +65,5 @@ nnoremap <leader>w :w<CR>
 nnoremap J 5j
 nnoremap K 5k
 nnoremap gh K
-
+nnoremap <leader>la :action ShowIntentionActions<CR>
+nnoremap <leader>lh K
