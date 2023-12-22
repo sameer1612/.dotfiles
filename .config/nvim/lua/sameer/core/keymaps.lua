@@ -25,4 +25,4 @@ keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true }
 keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 keymap.set("v", "<M-k>", ":m '<-2<CR>gv=gv", { desc = "Move line down" })
 keymap.set("v", "<M-k>", ":m '>+1<CR>gv=gv", { desc = "Move line up" })
-keymap.set("v", "p", "_dP", { desc = "Paste without yanking" })
+keymap.set("v", "p", "P", { desc = "Paste without yanking" })

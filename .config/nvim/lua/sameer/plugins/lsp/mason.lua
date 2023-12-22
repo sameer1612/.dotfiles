@@ -30,6 +30,7 @@ return {
         "graphql",
         "solargraph",
         "angularls",
+        "tailwindcss",
       },
       automatic_installation = true,
     })
