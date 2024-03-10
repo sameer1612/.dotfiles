@@ -31,7 +31,7 @@
   // Whether to confirm before quitting Zed.
   "confirm_quit": false,
   // Whether the cursor blinks in the editor.
-  "cursor_blink": true,
+  "cursor_blink": false,
   // Whether to pop the completions menu while typing in an editor without
   // explicitly requesting it.
   "show_completions_on_input": true,

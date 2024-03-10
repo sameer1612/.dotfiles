@@ -99,7 +99,7 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 alias gst="git status"
-alias gc="git checkout "
+alias gc="fzf-git-checkout"
 alias gpull="git pull"
 alias gpush="git push"
 alias rserver="rails s "
