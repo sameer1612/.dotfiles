@@ -31,6 +31,7 @@ return {
         "solargraph",
         "angularls",
         "tailwindcss",
+        "elixirls",
       },
       automatic_installation = true,
     })

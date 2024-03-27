@@ -116,6 +116,16 @@ return {
       filetypes = { "graphql", "gql" },
     })
 
+    lspconfig["elixirls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      cmd = { "/Users/sameer/.elixir-ls/language_server.sh" },
+      single_file_support = true,
+      settings = {
+        dialyzerEnabled = true,
+      },
+    })
+
     lspconfig["lua_ls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
