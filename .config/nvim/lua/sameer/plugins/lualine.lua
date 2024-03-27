@@ -12,7 +12,7 @@ return {
         theme = "gruvbox-material",
       },
       sections = {
-        lualine_c = { { "filename" }, { maximize_status } },
+        lualine_c = { { "filename", path = 1 }, { maximize_status } },
         lualine_x = {
           { "filetype" },
           {
