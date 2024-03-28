@@ -6,6 +6,9 @@ opt.clipboard:append("unnamedplus")
 opt.cursorline = true
 opt.expandtab = true
 opt.ignorecase = true
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldenable = false
 opt.mouse = "a"
 opt.number = true
 opt.relativenumber = true
