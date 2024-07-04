@@ -1,0 +1,9 @@
+{
+  "buffer_font_family": "Martian Mono",
+  "buffer_font_size": 14,
+  "buffer_line_height": "comfortable",
+  "confirm_quit": true,
+  "cursor_blink": false,
+  "theme": "Andromeda",
+  "vim_mode": true
+}
