@@ -15,24 +15,24 @@
 yabai -m config                                 \
     active_window_opacity        1.0            \
     auto_balance                 off            \
-    bottom_padding               06             \
+    bottom_padding               02             \
     focus_follows_mouse          autoraise      \
     insert_feedback_color        0xffd75f5f     \
     layout                       bsp            \
-    left_padding                 06             \
+    left_padding                 02             \
     mouse_action1                move           \
     mouse_action2                resize         \
     mouse_drop_action            swap           \
     mouse_follows_focus          on             \
     mouse_modifier               alt            \
     normal_window_opacity        1.0            \
-    right_padding                06             \
+    right_padding                02             \
     split_ratio                  0.50           \
     split_type                   auto           \
-    top_padding                  06             \
+    top_padding                  02             \
     window_animation_duration    0.0            \
     window_animation_frame_rate  120            \
-    window_gap                   06             \
+    window_gap                   02             \
     window_opacity               off            \
     window_opacity_duration      0.0            \
     window_origin_display        default        \
