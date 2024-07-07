@@ -8,7 +8,6 @@ return {
     },
     config = function()
       local treesitter = require("nvim-treesitter.configs")
-      local ft_to_parser = require("nvim-treesitter.parsers").filetype_to_parsername
 
       treesitter.setup({
         highlight = {
@@ -41,8 +40,6 @@ return {
         },
         auto_install = true,
       })
-
-      ft_to_parser.ejs = "html"
     end,
   },
 }

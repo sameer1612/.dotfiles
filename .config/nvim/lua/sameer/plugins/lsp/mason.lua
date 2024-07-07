@@ -28,7 +28,7 @@ return {
         "emmet_ls",
         "pyright",
         "graphql",
-        "ruby_ls",
+        "ruby_lsp",
         "angularls",
         "tailwindcss",
         "elixirls",

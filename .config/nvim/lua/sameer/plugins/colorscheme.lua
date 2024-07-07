@@ -1,11 +1,13 @@
 return {
-  "sainnhe/gruvbox-material",
+  "oahlen/iceberg.nvim",
   lazy = false,
   priority = 1000,
+  opts = {},
   config = function()
     vim.o.background = "dark"
-    vim.g.gruvbox_material_better_performance = 1
-    vim.g.gruvbox_material_background = "hard"
-    vim.cmd.colorscheme("gruvbox-material")
+    vim.cmd.colorscheme("iceberg")
+    vim.cmd("highlight clear LineNr")
+    vim.cmd("highlight clear SignColumn")
+    vim.cmd("highlight LineNr guifg=#454D73")
   end,
 }
