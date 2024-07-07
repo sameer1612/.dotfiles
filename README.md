@@ -1,7 +1,8 @@
 # .dotfiles
-> Ninja mac dotfiles, custom tailored for awesomeness.
+> Ninja Mac dotfiles, custom-tailored for awesomeness.
 
-<img width="2056" alt="yabai-splits" src="https://github.com/sameer1612/.dotfiles/assets/39580073/94a5d136-0773-4ed8-ae88-333cd9e035d8">
+<img width="2056" alt="yabai-splits" src="https://github.com/sameer1612/.dotfiles/assets/39580073/bf096981-b098-418f-a1cc-93d8cb198aa2">
+
 
 ---
 ## Includes sane configurations for the following:
