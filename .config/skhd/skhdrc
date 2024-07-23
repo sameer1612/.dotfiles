@@ -1,7 +1,7 @@
-# ctrl + shift - j : yabai -m window --focus south
-# ctrl + shift - k : yabai -m window --focus north
-# ctrl + shift - h : yabai -m window --focus west
-# ctrl + shift - l : yabai -m window --focus east
+ctrl + shift - j : yabai -m window --focus south
+ctrl + shift - k : yabai -m window --focus north
+ctrl + shift - h : yabai -m window --focus west
+ctrl + shift - l : yabai -m window --focus east
 
 ctrl + shift - r : yabai -m space --rotate 270
 ctrl + shift - y : yabai -m space --mirror y-axis
@@ -17,4 +17,14 @@ ctrl + shift - n : yabai -m window --display south; yabai -m display --focus sou
 
 ctrl + shift - q : yabai --stop-service
 ctrl + shift - s : yabai --start-service
+
+ctrl + shift - 1 : yabai -m window --space 1
+ctrl + shift - 2 : yabai -m window --space 2
+ctrl + shift - 3 : yabai -m window --space 3
+
+ctrl + shift - left : yabai -m window --warp west
+ctrl + shift - right : yabai -m window --warp east
+ctrl + shift - up : yabai -m window --warp north
+ctrl + shift - down : yabai -m window --warp south
+
 
