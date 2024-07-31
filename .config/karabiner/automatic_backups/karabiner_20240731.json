@@ -125,7 +125,7 @@
                         ]
                     },
                     {
-                        "description": "Right Command -> Control",
+                        "description": "Right Command -> Enter",
                         "manipulators": [
                             {
                                 "from": {
@@ -142,12 +142,12 @@
                                 },
                                 "to_if_alone": [
                                     {
-                                        "key_code": "left_control"
+                                        "key_code": "return_or_enter"
                                     }
                                 ],
                                 "to_if_held_down": [
                                     {
-                                        "key_code": "left_control"
+                                        "key_code": "right_command"
                                     }
                                 ],
                                 "type": "basic"
