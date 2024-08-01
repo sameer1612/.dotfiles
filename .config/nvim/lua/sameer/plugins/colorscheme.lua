@@ -2,9 +2,10 @@ return {
   "catppuccin/nvim",
   lazy = false,
   priority = 1000,
-  opts = {},
   config = function()
-    vim.o.background = "dark"
+    require("catppuccin").setup({
+      transparent_background = true,
+    })
     vim.cmd.colorscheme("catppuccin-mocha")
   end,
 }
