@@ -26,5 +26,3 @@ ctrl + shift - left : yabai -m window --warp west
 ctrl + shift - right : yabai -m window --warp east
 ctrl + shift - up : yabai -m window --warp north
 ctrl + shift - down : yabai -m window --warp south
-
-
