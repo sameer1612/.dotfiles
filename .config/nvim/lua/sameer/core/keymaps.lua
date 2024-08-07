@@ -21,6 +21,8 @@ keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }
 keymap.set("n", "<leader>w", "<cmd> w <CR>", { desc = "Write buffer" })
 keymap.set("n", "J", "5j", { desc = "Move 5 lines down" })
 keymap.set("n", "K", "5k", { desc = "Move 5 lines up" })
+keymap.set("v", "J", "5j", { desc = "Move 5 lines down" })
+keymap.set("v", "K", "5k", { desc = "Move 5 lines up" })
 keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 keymap.set("v", "<M-k>", ":m '<-2<CR>gv=gv", { desc = "Move line down" })

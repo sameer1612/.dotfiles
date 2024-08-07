@@ -9,7 +9,7 @@ return {
     local lualine = require("lualine")
     lualine.setup({
       options = {
-        theme = "catppuccin",
+        theme = "gruvbox-material",
       },
       sections = {
         lualine_c = { { "filename", path = 1 }, { maximize_status } },
