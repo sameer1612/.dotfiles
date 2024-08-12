@@ -1,15 +1,15 @@
 start-at-login = true
 
-enable-normalization-flatten-containers = false
-enable-normalization-opposite-orientation-for-nested-containers = false
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
 
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 on-focus-changed = "move-mouse window-lazy-center"
 
 
 [mode.main.binding]
+alt-q = 'enable off'
 alt-tab = 'workspace-back-and-forth'
-alt-comma = 'layout tiles horizontal vertical'
 
 alt-h = 'focus left'
 alt-j = 'focus down'
@@ -24,6 +24,7 @@ alt-shift-l = 'move right'
 alt-f = 'fullscreen'
 
 alt-shift-space = 'layout floating tiling'
+alt-comma = 'layout tiles horizontal vertical'
 
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
