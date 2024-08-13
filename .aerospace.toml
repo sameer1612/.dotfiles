@@ -11,10 +11,10 @@ on-focus-changed = "move-mouse window-lazy-center"
 alt-q = 'enable off'
 alt-tab = 'workspace-back-and-forth'
 
-alt-h = 'focus left'
-alt-j = 'focus down'
-alt-k = 'focus up'
-alt-l = 'focus right'
+# alt-h = 'focus left'
+# alt-j = 'focus down'
+# alt-k = 'focus up'
+# alt-l = 'focus right'
 
 alt-shift-h = 'move left'
 alt-shift-j = 'move down'
