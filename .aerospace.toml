@@ -16,10 +16,10 @@ alt-tab = 'workspace-back-and-forth'
 # alt-k = 'focus up'
 # alt-l = 'focus right'
 
-shift-left = 'move left'
-shift-down = 'move down'
-shift-up = 'move up'
-shift-right = 'move right'
+# shift-left = 'move left'
+# shift-down = 'move down'
+# shift-up = 'move up'
+# shift-right = 'move right'
 
 alt-f = 'fullscreen'
 
