@@ -34,6 +34,7 @@ alt-c = 'workspace c'
 alt-m = 'workspace m'
 alt-g = 'workspace g'
 alt-s = 'workspace s'
+alt-w = 'workspace w'
 
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
@@ -48,8 +49,8 @@ alt-shift-c = 'move-node-to-workspace c'
 alt-shift-g = 'move-node-to-workspace g'
 alt-shift-m = 'move-node-to-workspace m'
 alt-shift-s = 'move-node-to-workspace s'
+alt-shift-w = 'move-node-to-workspace w'
 
-alt-shift-c = 'reload-config'
 alt-r = 'mode resize'
 alt-e = 'balance-sizes'
 
@@ -76,6 +77,10 @@ if.app-id = 'com.microsoft.VSCode'
 run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
+if.app-id = 'com.jetbrains.WebStorm'
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
 if.app-id = 'org.mozilla.firefoxdeveloperedition'
 run = "move-node-to-workspace 1"
 
@@ -97,7 +102,7 @@ run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
-run = "move-node-to-workspace 4"
+run = "move-node-to-workspace w"
 
 [[on-window-detected]]
 if.app-id = 'com.apple.iCal'
