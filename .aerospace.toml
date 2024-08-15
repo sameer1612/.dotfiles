@@ -31,9 +31,7 @@ alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
 alt-c = 'workspace c'
-alt-m = 'workspace m'
 alt-g = 'workspace g'
-alt-s = 'workspace s'
 alt-w = 'workspace w'
 
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -47,8 +45,6 @@ alt-shift-8 = 'move-node-to-workspace 8'
 alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-c = 'move-node-to-workspace c'
 alt-shift-g = 'move-node-to-workspace g'
-alt-shift-m = 'move-node-to-workspace m'
-alt-shift-s = 'move-node-to-workspace s'
 alt-shift-w = 'move-node-to-workspace w'
 
 alt-r = 'mode resize'
@@ -68,6 +64,8 @@ check-further-callbacks = true
 run = 'layout tiling'
 
 # Application to workspace mapping
+# 1 - coding
+# 2 - office communication
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
 run = "move-node-to-workspace 1"
@@ -93,6 +91,14 @@ if.app-id = 'com.microsoft.Outlook'
 run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = "move-node-to-workspace 2"
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = "move-node-to-workspace 2"
+
+[[on-window-detected]]
 if.app-id = 'com.apple.Safari'
 run = "move-node-to-workspace 3"
 
@@ -112,13 +118,6 @@ run = "move-node-to-workspace c"
 if.app-id = 'com.github.GitHubClient'
 run = "move-node-to-workspace g"
 
-[[on-window-detected]]
-if.app-id = 'com.apple.mail'
-run = "move-node-to-workspace m"
-
-[[on-window-detected]]
-if.app-id = 'com.tinyspeck.slackmacgap'
-run = "move-node-to-workspace s"
 
 [gaps]
 inner.horizontal = 2
