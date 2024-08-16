@@ -122,7 +122,3 @@ run = "move-node-to-workspace g"
 [gaps]
 inner.horizontal = 2
 inner.vertical = 2
-outer.left = 2
-outer.bottom = 2
-outer.top = 2
-outer.right = 2
