@@ -40,12 +40,12 @@ return {
       ensure_installed = {
         "prettierd",
         "stylua",
-        "eslint_d",
         "isort",
         "black",
         "eslint_d",
         "rubocop",
         "ruff",
+        "biome",
       },
 
       automatic_installation = true,
