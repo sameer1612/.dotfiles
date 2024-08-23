@@ -10,6 +10,7 @@ on-focus-changed = "move-mouse window-lazy-center"
 [mode.main.binding]
 alt-q = 'enable off'
 alt-tab = 'workspace-back-and-forth'
+alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 ctrl-alt-left = 'move left'
 ctrl-alt-down = 'move down'
@@ -26,10 +27,6 @@ alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
 alt-5 = 'workspace 5'
-alt-6 = 'workspace 6'
-alt-7 = 'workspace 7'
-alt-8 = 'workspace 8'
-alt-9 = 'workspace 9'
 alt-c = 'workspace c'
 alt-g = 'workspace g'
 alt-w = 'workspace w'
@@ -39,10 +36,6 @@ alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
 alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
 alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
 alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5']
-alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
-alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
-alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
-alt-shift-9 = ['move-node-to-workspace 9', 'workspace 9']
 alt-shift-c = ['move-node-to-workspace c', 'workspace c']
 alt-shift-g = ['move-node-to-workspace g', 'workspace g']
 alt-shift-w = ['move-node-to-workspace w', 'workspace w']
@@ -80,6 +73,14 @@ run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefoxdeveloperedition'
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.com.zen.browser'
 run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
