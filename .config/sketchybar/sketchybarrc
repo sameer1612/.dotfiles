@@ -8,7 +8,7 @@ default=(
   padding_left=0
   padding_right=0
   icon.font="VictorMono Nerd Font:Regular:14.0"
-  label.font="SF Pro:Semibold:13.0"
+  label.font="VictorMono Nerd Font:Regular:14.0"
   icon.color=0xffffffff
   label.color=0xffffffff
   icon.padding_left=4
@@ -33,7 +33,9 @@ sketchybar --add item clock right \
            --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" \
            --add item battery right \
            --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
-           --subscribe battery system_woke power_source_change
+           --subscribe battery system_woke power_source_change \
+           --add item meetingbar right \
+           --set meetingbar update_freq=120 script="$PLUGIN_DIR/meetingbar.sh" \
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
