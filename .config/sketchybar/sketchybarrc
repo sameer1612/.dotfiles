@@ -8,7 +8,7 @@ default=(
   padding_left=0
   padding_right=0
   icon.font="VictorMono Nerd Font:Regular:14.0"
-  label.font="SF Pro:Semibold:14.0"
+  label.font="SF Pro:Semibold:13.0"
   icon.color=0xffffffff
   label.color=0xffffffff
   icon.padding_left=4
@@ -20,22 +20,17 @@ sketchybar --default "${default[@]}"
 
 sketchybar --add event aerospace_workspace_change
 
-for sid in $(aerospace list-workspaces --all); do
-    sketchybar --add item space.$sid left \
-        --subscribe space.$sid aerospace_workspace_change \
-        --set space.$sid \
-        background.color=0x21ffffff \
-        background.corner_radius=5 \
-        background.height=25 \
-        background.drawing=off \
-        label.padding_right=15 \
-        label="$sid" \
-        click_script="aerospace workspace $sid" \
-        script="$CONFIG_DIR/plugins/aerospace.sh $sid"
-done
+sketchybar --add item workspace left \
+    --subscribe workspace aerospace_workspace_change \
+    --set workspace \
+    background.color=0x21ffffff \
+    background.corner_radius=5 \
+    background.height=20 \
+    label.padding_right=15 \
+    script="$CONFIG_DIR/plugins/aerospace.sh $sid"
 
 sketchybar --add item clock right \
-           --set clock update_freq=10 icon=  script="$PLUGIN_DIR/clock.sh" \
+           --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" \
            --add item battery right \
            --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
            --subscribe battery system_woke power_source_change
