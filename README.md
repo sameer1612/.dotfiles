@@ -1,10 +1,11 @@
 # .dotfiles
+
 > Ninja Mac dotfiles, custom-tailored for awesomeness.
 
 <img width="2056" alt="yabai-splits" src="https://github.com/sameer1612/.dotfiles/assets/39580073/bf096981-b098-418f-a1cc-93d8cb198aa2">
 
-
 ---
+
 ## Includes sane configurations for the following:
 
 1. Neovim
@@ -20,3 +21,4 @@
 11. Zed
 12. Tmux
 13. Firefox
+14. Sketchybar

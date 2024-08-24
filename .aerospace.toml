@@ -1,4 +1,5 @@
 start-at-login = true
+after-startup-command = ['exec-and-forget sketchybar']
 
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
@@ -6,6 +7,9 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 on-focus-changed = "move-mouse window-lazy-center"
 
+exec-on-workspace-change = ['/bin/bash', '-c',
+  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+]
 
 [mode.main.binding]
 alt-q = 'enable off'
@@ -25,8 +29,6 @@ alt-comma = 'layout tiles horizontal vertical'
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
-alt-4 = 'workspace 4'
-alt-5 = 'workspace 5'
 alt-c = 'workspace c'
 alt-g = 'workspace g'
 alt-w = 'workspace w'
@@ -34,8 +36,6 @@ alt-w = 'workspace w'
 alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
 alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
 alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
-alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
-alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5']
 alt-shift-c = ['move-node-to-workspace c', 'workspace c']
 alt-shift-g = ['move-node-to-workspace g', 'workspace g']
 alt-shift-w = ['move-node-to-workspace w', 'workspace w']
