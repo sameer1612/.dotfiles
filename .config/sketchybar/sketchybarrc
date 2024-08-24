@@ -5,8 +5,8 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 sketchybar --bar position=top height=40 blur_radius=30 color=15ffffff
 
 default=(
-  padding_left=5
-  padding_right=5
+  padding_left=0
+  padding_right=0
   icon.font="VictorMono Nerd Font:Regular:14.0"
   label.font="SF Pro:Semibold:14.0"
   icon.color=0xffffffff
@@ -17,9 +17,6 @@ default=(
   label.padding_right=4
 )
 sketchybar --default "${default[@]}"
-
-sketchybar --add item chevron left \
-           --set chevron icon= label.drawing=off \
 
 sketchybar --add event aerospace_workspace_change
 

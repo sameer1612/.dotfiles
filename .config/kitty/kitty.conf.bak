@@ -83,7 +83,7 @@ listen_on unix:/tmp/mykitty
 ###############################################################
 
 # Background
-background_image leaves.png
-background_image_layout cscaled
-background_opacity 1
-background_tint 0.90
+# background_image leaves.png
+# background_image_layout cscaled
+# background_opacity 1
+# background_tint 0.90
