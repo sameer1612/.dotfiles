@@ -11,23 +11,17 @@ def remove_ansi_escape_codes(input_string):
 
 
 def get_time_remaining(target_time):
-    now = datetime.now()
+    current_time = datetime.now().strftime("%I:%M")
 
-    target = datetime.strptime(target_time, "%H:%M").replace(
-        year=now.year, month=now.month, day=now.day
-    )
-
-    if target < now:
-        target += timedelta(hours=12)
-
-    remaining_time = target - now
-    hours, remainder = divmod(remaining_time.seconds, 3600)
-    minutes = remainder // 60
-
-    if hours >= 1 or minutes == 0:
+    if current_time[0:2] != target_time[0:2]:
         return "---"
 
-    return f"{minutes} mins"
+    remaining_mins = int(target_time[3:5]) - int(current_time[3:5])
+
+    if remaining_mins > 0:
+        return f"{remaining_mins} mins"
+    else:
+        return "---"
 
 
 log = remove_ansi_escape_codes(sys.argv[1])
