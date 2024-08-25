@@ -10,7 +10,7 @@ default=(
   icon.font="VictorMono Nerd Font:Regular:14.0"
   label.font="VictorMono Nerd Font:Regular:14.0"
   icon.color=0xffffffff
-  label.color=0xffffffff
+  label.color=0xaaffffff
   icon.padding_left=4
   icon.padding_right=4
   label.padding_left=4
@@ -23,16 +23,12 @@ sketchybar --add event aerospace_workspace_change
 sketchybar --add item workspace left \
     --subscribe workspace aerospace_workspace_change \
     --set workspace \
-    background.color=0x21ffffff \
-    background.corner_radius=5 \
-    background.height=20 \
-    label.padding_right=15 \
     script="$CONFIG_DIR/plugins/aerospace.sh $sid"
 
 sketchybar --add item clock right \
            --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" \
            --add item meetingbar right \
-           --set meetingbar update_freq=120 script="$PLUGIN_DIR/meetingbar.sh" \
+           --set meetingbar update_freq=120 script="$PLUGIN_DIR/meeting.sh" \
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
