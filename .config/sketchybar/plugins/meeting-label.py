@@ -27,7 +27,7 @@ def get_time_remaining(target_time):
     if hours >= 1 or minutes == 0:
         return "---"
 
-    return f"{minutes} mins "
+    return f"{minutes} mins"
 
 
 log = sys.argv[1]

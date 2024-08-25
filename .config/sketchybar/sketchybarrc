@@ -26,7 +26,6 @@ sketchybar --add item workspace right \
   --set workspace script="$CONFIG_DIR/plugins/aerospace.sh $sid"
 
 sketchybar --add item meeting right \
-  --set meeting label.padding_right=12 \
   --set meeting background.color=0x12ffffff \
   --set meeting update_freq=60 script="$PLUGIN_DIR/meeting.sh"
 
