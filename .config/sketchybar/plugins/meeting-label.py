@@ -26,23 +26,27 @@ def get_time_remaining(target_time):
     hours, remainder = divmod(remaining_time.seconds, 3600)
     minutes = remainder // 60
 
-    if minutes == 0:
-        return f"{hours}h"
+    if hours >= 1 or minutes == 0:
+        return "---"
 
-    if hours == 0:
-        return f"{minutes}m"
-
-    return f"{hours}h {minutes}m "
+    return f"{minutes} mins "
 
 
 log = sys.argv[1]
 
-for line in log.split("\n"):
-    if "Calendar" in line:
-        log = line.strip().replace("Calendar", "-")
+lines = log.split("\n")
+
+for index in range(len(lines)):
+    if "---" in lines[index]:
+        log = lines[index + 1].strip().replace("Calendar", "-")
         break
 
 time = remove_ansi_escape_codes(log.split("-")[0]).strip()
 event = remove_ansi_escape_codes(log.split("-")[1]).strip()
 
-print(event + " in " + get_time_remaining(time))
+time_remaining = get_time_remaining(time)
+
+if time_remaining == "---":
+    print("---")
+else:
+    print(event + " in " + time_remaining)
