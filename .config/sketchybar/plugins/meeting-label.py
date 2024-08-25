@@ -13,31 +13,44 @@ def remove_ansi_escape_codes(input_string):
 def get_time_remaining(target_time):
     current_time = datetime.now().strftime("%I:%M")
 
-    if current_time[0:2] != target_time[0:2]:
+    current_hour = int(current_time[0:2])
+    target_hour = int(target_time[0:2])
+    current_mins = int(current_time[3:5])
+    target_mins = int(target_time[3:5])
+    remaining_mins = 0
+
+    if target_hour > current_hour + 1:
         return "---"
 
-    remaining_mins = int(target_time[3:5]) - int(current_time[3:5])
-
-    if remaining_mins > 0:
-        return f"{remaining_mins} mins"
-    else:
+    if target_hour == current_hour and current_mins > target_mins:
         return "---"
+
+    if target_hour == current_hour:
+        remaining_mins = target_mins - current_mins
+
+    if target_hour > current_hour or (current_hour == 12 and target_hour == 1):
+        remaining_mins = 60 - current_mins
+        remaining_mins += target_mins
+
+    if remaining_mins == 0 or remaining_mins > 60:
+        return "---"
+
+    return f"{remaining_mins} mins"
 
 
 log = remove_ansi_escape_codes(sys.argv[1])
 lines = log.split("\n")
 
-for index in range(len(lines)):
-    if "---" in lines[index]:
-        log = lines[index + 1].strip().replace("Calendar", "-")
-        break
+try:
+    for index in range(len(lines)):
+        if "---" in lines[index]:
+            log = lines[index + 1].strip().replace("Calendar", "-")
+            break
 
-time = log.split("-")[0].strip()
-event = log.split("-")[1].strip()
+    time = log.split("-")[0].strip()
+    event = log.split("-")[1].strip()
 
-time_remaining = get_time_remaining(time)
+    print(event.capitalize() + " in " + get_time_remaining(time))
 
-if time_remaining == "---":
+except Exception:
     print("---")
-else:
-    print(event + " in " + time_remaining)

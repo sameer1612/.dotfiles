@@ -15,7 +15,6 @@ default=(
   label.padding_right=6
   background.padding_right=4
   background.padding_left=4
-  background.corner_radius=4
 )
 sketchybar --default "${default[@]}"
 
@@ -27,7 +26,6 @@ sketchybar --add item workspace right \
   --set workspace script="$CONFIG_DIR/plugins/aerospace.sh $sid"
 
 sketchybar --add item meeting right \
-  --set meeting background.color=0x12ffffff \
   --set meeting update_freq=60 script="$PLUGIN_DIR/meeting.sh"
 
 ##### Force all scripts to run the first time (never do this in a script) #####
