@@ -31,9 +31,6 @@ sketchybar --add item workspace left \
 
 sketchybar --add item clock right \
            --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" \
-           --add item battery right \
-           --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
-           --subscribe battery system_woke power_source_change \
            --add item meetingbar right \
            --set meetingbar update_freq=120 script="$PLUGIN_DIR/meetingbar.sh" \
 
