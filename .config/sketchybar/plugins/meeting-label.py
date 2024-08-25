@@ -2,7 +2,7 @@
 
 import sys
 import re
-from datetime import datetime, timedelta
+from datetime import datetime
 
 
 def remove_ansi_escape_codes(input_string):
