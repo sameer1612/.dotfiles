@@ -7,9 +7,7 @@ from datetime import datetime, timedelta
 
 def remove_ansi_escape_codes(input_string):
     ansi_escape = re.compile(r"\x1B\[[0-9;]*m")
-    clean_string = ansi_escape.sub("", input_string)
-
-    return clean_string
+    return ansi_escape.sub("", input_string)
 
 
 def get_time_remaining(target_time):
@@ -33,7 +31,6 @@ def get_time_remaining(target_time):
 
 
 log = sys.argv[1]
-
 lines = log.split("\n")
 
 for index in range(len(lines)):
