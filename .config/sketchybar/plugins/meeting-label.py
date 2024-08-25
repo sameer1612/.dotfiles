@@ -30,7 +30,7 @@ def get_time_remaining(target_time):
     return f"{minutes} mins"
 
 
-log = sys.argv[1]
+log = remove_ansi_escape_codes(sys.argv[1])
 lines = log.split("\n")
 
 for index in range(len(lines)):
@@ -38,8 +38,8 @@ for index in range(len(lines)):
         log = lines[index + 1].strip().replace("Calendar", "-")
         break
 
-time = remove_ansi_escape_codes(log.split("-")[0]).strip()
-event = remove_ansi_escape_codes(log.split("-")[1]).strip()
+time = log.split("-")[0].strip()
+event = log.split("-")[1].strip()
 
 time_remaining = get_time_remaining(time)
 
