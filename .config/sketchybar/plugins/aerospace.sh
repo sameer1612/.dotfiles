@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-sketchybar --set $NAME label="$FOCUSED_WORKSPACE"
+uppercased_string=$(echo "$FOCUSED_WORKSPACE" | tr '[:lower:]' '[:upper:]')
+sketchybar --set $NAME label="$uppercased_string"

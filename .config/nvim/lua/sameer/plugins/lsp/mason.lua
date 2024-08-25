@@ -46,6 +46,7 @@ return {
         "rubocop",
         "ruff",
         "biome",
+        "shfmt",
       },
 
       automatic_installation = true,

@@ -18,6 +18,8 @@ return {
       markdown = { "prettierd" },
       python = { "isort", "black" },
       ruby = { "rubocop" },
+      sh = { "shfmt" },
+      conf = { "shfmt" },
       ["_"] = { "trim_whitespace" },
     },
     format_on_save = {

@@ -2,17 +2,15 @@
 
 PLUGIN_DIR="$CONFIG_DIR/plugins"
 
-sketchybar --bar position=top height=40 blur_radius=30 color=15ffffff
+sketchybar --bar position=top color=15ffffff
 
 default=(
   padding_left=0
   padding_right=0
   icon.font="VictorMono Nerd Font:Regular:14.0"
   label.font="VictorMono Nerd Font:Regular:14.0"
-  icon.color=0xffffffff
+  icon.color=0xaaffffff
   label.color=0xaaffffff
-  icon.padding_left=4
-  icon.padding_right=4
   label.padding_left=4
   label.padding_right=4
 )
@@ -20,15 +18,13 @@ sketchybar --default "${default[@]}"
 
 sketchybar --add event aerospace_workspace_change
 
-sketchybar --add item workspace left \
-    --subscribe workspace aerospace_workspace_change \
-    --set workspace \
-    script="$CONFIG_DIR/plugins/aerospace.sh $sid"
+sketchybar --add item meeting right \
+  --set meeting label.padding_right=12 \
+  --set meeting update_freq=60 script="$PLUGIN_DIR/meeting.sh"
 
-sketchybar --add item clock right \
-           --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" \
-           --add item meetingbar right \
-           --set meetingbar update_freq=120 script="$PLUGIN_DIR/meeting.sh" \
+sketchybar --add item workspace right \
+  --subscribe workspace aerospace_workspace_change \
+  --set workspace script="$CONFIG_DIR/plugins/aerospace.sh $sid"
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
