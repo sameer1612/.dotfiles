@@ -50,7 +50,12 @@ try:
     time = log.split("-")[0].strip()
     event = log.split("-")[1].strip()
 
-    print(event.capitalize() + " in " + get_time_remaining(time))
+    time_remaining = get_time_remaining(time)
+
+    if time_remaining == "---":
+        print("---")
+    else:
+        print(event.split(" at ")[0].strip().capitalize() + " in " + time_remaining)
 
 except Exception:
     print("---")
