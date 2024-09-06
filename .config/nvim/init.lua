@@ -1,2 +1,2 @@
 require("sameer.core")
-require("sameer.lazy")
+require("sameer.lazy-setup")
