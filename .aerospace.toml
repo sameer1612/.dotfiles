@@ -12,7 +12,6 @@ exec-on-workspace-change = ['/bin/bash', '-c',
 ]
 
 [mode.main.binding]
-alt-q = 'enable off'
 alt-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
