@@ -55,6 +55,12 @@ if.app-id = 'com.microsoft.VSCode'
 check-further-callbacks = true
 run = 'layout tiling'
 
+[[on-window-detected]]
+if.app-id = 'org.mozilla.com.zen.browser'
+if.window-title-regex-substring = 'Picture-in-Picture'
+check-further-callbacks = true
+run = 'layout floating'
+
 # Application to workspace mapping
 # 1 - coding
 # 2 - office communication
@@ -91,14 +97,6 @@ if.app-id = 'com.google.Chrome'
 run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
-if.app-id = 'com.microsoft.Outlook'
-run = "move-node-to-workspace 2"
-
-[[on-window-detected]]
-if.app-id = 'com.apple.mail'
-run = "move-node-to-workspace 2"
-
-[[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = "move-node-to-workspace 2"
 
@@ -121,6 +119,14 @@ run = "move-node-to-workspace c"
 [[on-window-detected]]
 if.app-id = 'com.github.GitHubClient'
 run = "move-node-to-workspace g"
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Outlook'
+run = "move-node-to-workspace m"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = "move-node-to-workspace m"
 
 
 [gaps]
