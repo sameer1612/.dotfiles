@@ -141,6 +141,7 @@ export PNPM_HOME="/Users/sameer/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/15/bin:$PATH"
 export ERL_AFLAGS="-kernel shell_history enabled"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 eval "$(rbenv init - zsh)"
 [ -f "/Users/sameer/.ghcup/env" ] && source "/Users/sameer/.ghcup/env" # ghcup-env

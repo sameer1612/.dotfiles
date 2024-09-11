@@ -28,6 +28,7 @@ alt-comma = 'layout tiles horizontal vertical'
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
+alt-b = 'workspace b'
 alt-c = 'workspace c'
 alt-g = 'workspace g'
 alt-w = 'workspace w'
@@ -35,6 +36,7 @@ alt-w = 'workspace w'
 alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
 alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
 alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
+alt-shift-b = ['move-node-to-workspace b', 'workspace b']
 alt-shift-c = ['move-node-to-workspace c', 'workspace c']
 alt-shift-g = ['move-node-to-workspace g', 'workspace g']
 alt-shift-w = ['move-node-to-workspace w', 'workspace w']
@@ -78,18 +80,14 @@ run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefoxdeveloperedition'
-run = "move-node-to-workspace 1"
+run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
-run = "move-node-to-workspace 1"
+run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.com.zen.browser'
-run = "move-node-to-workspace 1"
-
-[[on-window-detected]]
-if.app-id = 'com.microsoft.teams2'
 run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
@@ -97,12 +95,16 @@ if.app-id = 'com.google.Chrome'
 run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
-if.app-id = 'com.tinyspeck.slackmacgap'
+if.app-id = 'com.apple.Safari'
 run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
-if.app-id = 'com.apple.Safari'
-run = "move-node-to-workspace 3"
+if.app-id = 'com.microsoft.teams2'
+run = "move-node-to-workspace c"
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = "move-node-to-workspace c"
 
 [[on-window-detected]]
 if.app-id = 'com.figma.Desktop'
@@ -111,10 +113,6 @@ run = "move-node-to-workspace 3"
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
 run = "move-node-to-workspace w"
-
-[[on-window-detected]]
-if.app-id = 'com.apple.iCal'
-run = "move-node-to-workspace c"
 
 [[on-window-detected]]
 if.app-id = 'com.github.GitHubClient'
