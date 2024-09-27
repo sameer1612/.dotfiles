@@ -20,6 +20,10 @@ sketchybar --default "${default[@]}"
 
 sketchybar --add event aerospace_workspace_change
 
+sketchybar --add item clock right \
+  --set workspace background.color=0x12ffffff \
+  --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh"
+
 sketchybar --add item workspace right \
   --subscribe workspace aerospace_workspace_change \
   --set workspace background.color=0x12ffffff \
