@@ -130,6 +130,8 @@ alias nm="nodemon "
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 export DENO_INSTALL="/Users/sameer/.deno"
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/Users/sameer/softwares/flutter/bin:$PATH"
 export PATH="/opt/homebrew/opt/mongodb-community@4.4/bin:$PATH"
@@ -137,11 +139,14 @@ export PATH="/Users/sameer/Applications/JetBrains Toolbox:$PATH"
 export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="/Users/sameer/.emacs.d/bin:$PATH"
 export PATH="$(npm prefix -g)/bin:$PATH"
-export PNPM_HOME="/Users/sameer/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/15/bin:$PATH"
-export ERL_AFLAGS="-kernel shell_history enabled"
 export PATH="/opt/homebrew/sbin:$PATH"
+export PNPM_HOME="/Users/sameer/Library/pnpm"
+
+export ANDROID_SDK_ROOT=~/Library/Android/sdk
+export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_AVD_HOME=~/.android/avd
 
 eval "$(rbenv init - zsh)"
 [ -f "/Users/sameer/.ghcup/env" ] && source "/Users/sameer/.ghcup/env" # ghcup-env

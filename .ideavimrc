@@ -45,7 +45,8 @@ let g:NERDTreeMapActivateNode = 'l'
 let g:NERDTreeMapJumpParent = 'h'
 
 inoremap jk <ESC>
-nnoremap 0 ^ nnoremap <C-h> <C-w>h
+nnoremap 0 ^
+nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
