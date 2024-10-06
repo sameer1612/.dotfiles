@@ -1,0 +1,115 @@
+---
+name: 📝 Bug Report
+description: Report something that isn't working as intended
+labels: ["is:bug", "needs-triage"]
+projects: ["doomemacs/2"]
+body:
+- type: markdown
+  attributes:
+    value: |
+      > :warning: Our issue tracker is only for bug reports, not feature requests, or general user support. Submit those to [our Discourse](https://discourse.doomemacs.org) or [our Discord server](https://doomemacs.org/discord) instead.
+
+      **Before you fill out this bug report,** please ensure that you've exhausted all other options. Emacs' complexity tends to swamp us with false positive and vague issues. We desperately need your help to meet us halfway by following this checklist:
+- type: checkboxes
+  attributes:
+    label: "I confirm that..."
+    options:
+      - label: >
+          I have searched the [issue
+          tracker](https://github.com/doomemacs/doomemacs/issues),
+          [documentation](https://docs.doomemacs.org),
+          [FAQ](https://docs.doomemacs.org/-/faq),
+          [Discourse](https://discourse.doomemacs.org), and
+          [Google](https://google.com), in case this issue has already been
+          reported/resolved.
+        required: true
+      - label: >
+          I have read "[How to Debug
+          Issues](https://doomemacs.org/d/how2debug)", and will use it to
+          provide as much information about this issue as possible.
+        required: true
+      - label: >
+          The issue can be reproduced on the **latest** available commit of
+          Doom.
+        required: true
+      - label: >
+          The issue can be reproduced on a stable release of Emacs, such as 27,
+          28, or 29. *(Unstable versions end in .50, .60, or .9x)*
+        required: true
+- type: markdown
+  attributes:
+    value: "-----"
+- type: textarea
+  attributes:
+    label: Expected behavior
+    description: A concise description of what you expected to happen.
+    placeholder: When I do X, it should do Y.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Current behavior
+    description: |
+      A concise description of what you're experiencing. Try to include:
+
+      - A [backtrace](https://doomemacs.org/d/how2backtrace) for **each** error message.
+      - Any recent errors/warnings in the \*Messages\* buffer (`C-h e` to open it).
+      - Screenshots and gifs.
+      - Descriptions that are more helpful than "X does not work" or similar.
+      - Any attempts you made to resolve the issue yourself, and their result.
+    placeholder: |
+      When I do X, it does Z instead, which throws an error. Here is the backtrace:
+
+      ```
+      Debugger entered--Lisp error: (error "Beep Boop")
+        error("Beep Boop")
+        pp-eval-expression((error "Beep Boop"))
+        \#<subr funcall-interactively>(pp-eval-expression (error "Beep Boop"))
+        apply(#<subr funcall-interactively> (pp-eval-expression (error "Beep Boop")))
+        funcall-interactively(pp-eval-expression (error "Beep Boop"))
+      ```
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      > :warning: Take the time to properly format code and text dumps with [code fences](https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks), or use a [pastebin](https://pastebin.com) (or similar) service.
+- type: textarea
+  attributes:
+    label: Steps to reproduce
+    description: >
+      Walk us through a minimal test case. Please spell out any keybinds (and
+      what commands they invoke), and assume the reader knows little about Doom
+      and/or Emacs.
+    placeholder: |
+      1. Open Emacs
+      2. `M-x doom/info` and be prompted to visit pastebin.com
+      3. Press `y` to open pastebin.com in browser
+      4. Paste the contents of my clipboard into text box
+      5. Click "Create New Paste"
+  validations:
+    required: true
+- type: input
+  id: doominfo
+  attributes:
+    label: System Information
+    description: |
+      Upload the contents of `M-x doom/info` or `$ ~/.config/emacs/bin/doom info` to [pastebin](https://pastebin.com), [gist](https://gist.github.com), or a similar service, then paste the link to it here.
+    placeholder: https://pastebin.com/fakeurl
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      > :warning: Please don't paste your doom-info directly into this box, and **please don't omit it**. If it's unavailable, **explain why in the textbox or another field above!**
+- type: markdown
+  attributes:
+    value: |
+
+      -----
+
+      Please take the time to ensure that your report is well-formatted and formulated, and all error messages include [a backtrace](https://doomemacs.org/d/how2backtrace). Issues that are **unactionable**, **vague**, and/or **inadequately researched** (or otherwise unhelpful to posterity) will see heavy delays or be automatically closed (possibly deleted).
+
+      If you aren't sure that it makes the cut, submit it to [our Discord](https://doomemacs.org/discord) or [Discourse](https://discourse.doomemacs.org) instead.
+
+      :heart: **Thank you for taking the time to file this bug report!**

@@ -1,0 +1,58 @@
+#+title:    :lang beancount
+#+subtitle: Mind the GAAP
+#+created:  April 13, 2021
+#+since:    21.12.0
+
+* Description :unfold:
+This module adds support for [[https://beancount.github.io/][Beancount]] to Emacs. Beancount, like ledger, lets
+you [[https://plaintextaccounting.org/][manage your money in plain text]].
+
+** Maintainers
+- @hlissner
+
+[[doom-contrib-maintainer:][Become a maintainer?]]
+
+** Module flags
+- +lsp ::
+  Enable LSP support for ~beancount-mode~. Requires [[doom-module::tools lsp]] and a langserver
+  (supports [[https://github.com/polarmutex/beancount-language-server][beancount-language-server]]).
+
+** Packages
+- [[doom-package:beancount]]
+
+** Hacks
+- Associates the material =attach_money= icon with =*.beancount= files in the
+  [[doom-package:nerd-icons]] package.
+
+** TODO Changelog
+# This section will be machine generated. Don't edit it by hand.
+/This module does not have a changelog yet./
+
+* Installation
+[[id:01cffea4-3329-45e2-a892-95a384ab2338][Enable this module in your ~doom!~ block.]]
+
+This module requires:
+- [[https://github.com/beancount/beancount][beancount]], for generating reports
+- [[https://beancount.github.io/fava/][fava]], for a web interface for your ledgers
+- [[doom-executable:bean-format]], if [[doom-module::editor format]]
+
+* TODO Usage
+#+begin_quote
+ 󱌣 This module has no usage documentation yet. [[doom-contrib-module:][Write some?]]
+#+end_quote
+
+* TODO Configuration
+#+begin_quote
+ 󱌣 This module has no configuration documentation yet. [[doom-contrib-module:][Write some?]]
+#+end_quote
+
+* Troubleshooting
+/There are no known problems with this module./ [[doom-report:][Report one?]]
+
+* Frequently asked questions
+/This module has no FAQs yet./ [[doom-suggest-faq:][Ask one?]]
+
+* TODO Appendix
+#+begin_quote
+ 󱌣 This module has no appendix yet. [[doom-contrib-module:][Write one?]]
+#+end_quote

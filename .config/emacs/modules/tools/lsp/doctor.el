@@ -1,0 +1,9 @@
+;;; tools/lsp/doctor.el -*- lexical-binding: t; -*-
+
+(assert! (not (and (modulep! +eglot)
+                   (modulep! +peek)))
+         "+eglot and +peek flags are not compatible. Peek uses lsp-mode, while Eglot is another package altogether for LSP.")
+
+(unless (modulep! +eglot)
+  (unless (executable-find "npm")
+    (warn! "Couldn't find npm. `lsp-mode' needs npm to auto-install some LSP servers. For more information, see https://emacs-lsp.github.io/lsp-mode/page/languages/.")))
