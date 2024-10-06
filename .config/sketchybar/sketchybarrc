@@ -24,10 +24,10 @@ sketchybar --add item clock right \
   --set workspace background.color=0x12ffffff \
   --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh"
 
-sketchybar --add item workspace right \
-  --subscribe workspace aerospace_workspace_change \
-  --set workspace background.color=0x12ffffff \
-  --set workspace script="$CONFIG_DIR/plugins/aerospace.sh $sid"
+# sketchybar --add item workspace right \
+#   --subscribe workspace aerospace_workspace_change \
+#   --set workspace background.color=0x12ffffff \
+#   --set workspace script="$CONFIG_DIR/plugins/aerospace.sh $sid"
 
 sketchybar --add item meeting right \
   --set meeting update_freq=60 script="$PLUGIN_DIR/meeting.sh"

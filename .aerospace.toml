@@ -83,6 +83,14 @@ if.app-id = 'com.jetbrains.WebStorm'
 run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
+if.app-id = 'com.jetbrains.rubymine'
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = 'com.google.android.studio'
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
 if.app-id = 'org.mozilla.firefoxdeveloperedition'
 run = "move-node-to-workspace 2"
 
