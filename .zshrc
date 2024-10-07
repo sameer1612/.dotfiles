@@ -137,7 +137,6 @@ export PATH="/Users/sameer/softwares/flutter/bin:$PATH"
 export PATH="/opt/homebrew/opt/mongodb-community@4.4/bin:$PATH"
 export PATH="/Users/sameer/Applications/JetBrains Toolbox:$PATH"
 export PATH="$DENO_INSTALL/bin:$PATH"
-export PATH="/Users/sameer/.config/emacs/bin:$PATH"
 export PATH="$(npm prefix -g)/bin:$PATH"
 export PATH="$PNPM_HOME:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/15/bin:$PATH"
@@ -148,6 +147,8 @@ export ANDROID_SDK_ROOT=~/Library/Android/sdk
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_AVD_HOME=~/.android/avd
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 
 eval "$(rbenv init - zsh)"
 [ -f "/Users/sameer/.ghcup/env" ] && source "/Users/sameer/.ghcup/env" # ghcup-env
