@@ -1,11 +1,14 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-(global-display-line-numbers-mode t)
 
+(global-display-line-numbers-mode t)
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
+(setq ring-bell-function 'ignore)
+(setq visible-bell nil)
 (setq inhibit-startup-message t)
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
-
 
 (setq display-line-numbers-type 'relative)
 (dolist (mode '(org-mode-hook
