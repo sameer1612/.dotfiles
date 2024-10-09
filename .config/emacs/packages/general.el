@@ -1,3 +1,9 @@
+(defun reverse-join-line ()
+  "Join the next line to the current line."
+  (interactive)
+  (next-line)   ;; Move to the next line
+  (join-line))  ;; Then join the line
+
 (use-package general
   :config
   (general-create-definer rune/leader-keys
@@ -6,7 +12,8 @@
     :global-prefix "C-SPC")
 
   (rune/leader-keys
-   "j" '(join-line :which-key "join line")
-   "fc" '(lambda () (interactive) (find-file "~/.config/emacs/"))
+   "j" '(reverse-join-line :which-key "reverse join line")
+   "w" '(save-buffer :which-key "save buffer")
+   "fc" '(lambda () (interactive) (counsel-find-file "~/.config/emacs/"))
    "ff" '(counsel-find-file :which-key "join line")
    "fb" '(counsel-ibuffer :which-key "counsel buffer list")))

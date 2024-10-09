@@ -7,6 +7,8 @@
 (setq ring-bell-function 'ignore)
 (setq visible-bell nil)
 (setq inhibit-startup-message t)
+(setq scroll-preserve-screen-position t)
+
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
 
