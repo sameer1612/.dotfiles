@@ -15,6 +15,8 @@
    "j" '(reverse-join-line :which-key "reverse join line")
    "w" '(save-buffer :which-key "save buffer")
    "ff" '(counsel-projectile-find-file :which-key "find file in project")
+   "fg" '(counsel-projectile-git-grep :which-key "grep in project")
+   "fp" '(counsel-projectile-switch-project :which-key "switch project")
    "fc" '(lambda () (interactive) (counsel-find-file "~/.config/emacs/"))
    "fa" '(counsel-find-file :which-key "generic file opener")
    "fb" '(counsel-ibuffer :which-key "counsel buffer list")))

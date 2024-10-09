@@ -2,7 +2,7 @@
 
 (set-face-attribute 'default nil
                     :family "VictorMono Nerd Font"
-                    :weight 'medium :height 180)
+                    :weight 'regular :height 180)
 
 (set-fontset-font "fontset-default"
                   nil
