@@ -14,6 +14,7 @@
   (rune/leader-keys
    "j" '(reverse-join-line :which-key "reverse join line")
    "w" '(save-buffer :which-key "save buffer")
+   "ff" '(counsel-projectile-find-file :which-key "find file in project")
    "fc" '(lambda () (interactive) (counsel-find-file "~/.config/emacs/"))
-   "ff" '(counsel-find-file :which-key "join line")
+   "fa" '(counsel-find-file :which-key "generic file opener")
    "fb" '(counsel-ibuffer :which-key "counsel buffer list")))

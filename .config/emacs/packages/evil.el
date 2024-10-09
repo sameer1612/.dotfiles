@@ -6,7 +6,6 @@
   :config
   (evil-mode 1)
   (define-key evil-insert-state-map (kbd "C-g") 'evil-normal-state)
-  (define-key evil-insert-state-map (kbd "j k") 'evil-normal-state)
   (define-key evil-normal-state-map (kbd "0") 'evil-first-non-blank)
   (define-key evil-normal-state-map (kbd "J") (lambda () (interactive) (evil-next-line 5)))
   (define-key evil-normal-state-map (kbd "K") (lambda () (interactive) (evil-previous-line 5)))
@@ -32,3 +31,8 @@
   :config
   (setq evil-replace-with-register-key (kbd "gr"))
   (evil-replace-with-register-install))
+
+(use-package key-chord)
+(setq key-chord-two-keys-delay 0.5)
+(key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
+(key-chord-mode 1)

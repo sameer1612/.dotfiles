@@ -36,3 +36,4 @@
 (load (locate-user-emacs-file "packages/hydra.el"))
 (load (locate-user-emacs-file "packages/ivy.el"))
 (load (locate-user-emacs-file "packages/counsel.el"))
+(load (locate-user-emacs-file "packages/projectile.el"))
