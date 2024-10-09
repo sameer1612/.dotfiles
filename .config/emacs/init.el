@@ -1,3 +1,5 @@
+(add-to-list 'default-frame-alist '(undecorated . t))
+
 (load (locate-user-emacs-file "packages/packages.el"))
 
 (load (locate-user-emacs-file "theme.el"))
