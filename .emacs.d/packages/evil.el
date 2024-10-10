@@ -18,8 +18,6 @@
   (evil-define-key 'normal 'global (kbd "C-d") 'scroll-up)
   (evil-define-key 'normal 'global (kbd "C-u") 'scroll-down)
 
-
-
   ;; Keybindings for searching and finding files.
   (evil-define-key 'normal 'global (kbd "<leader> f f") 'project-find-file)
   (evil-define-key 'normal 'global (kbd "<leader> f G") 'consult-grep)
