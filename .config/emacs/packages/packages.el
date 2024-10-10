@@ -30,6 +30,29 @@
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
+(use-package treesit-auto
+  :ensure t
+  :after emacs
+  :custom
+  (treesit-auto-install 'prompt)
+  :config
+  (treesit-auto-add-to-auto-mode-alist 'all)
+  (global-treesit-auto-mode t))
+
+(use-package markdown-mode
+  :defer t 
+  :ensure t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown"))
+
+(use-package indent-guide
+  :defer t
+  :ensure t
+  :hook
+  (prog-mode . indent-guide-mode)
+  :config
+  (setq indent-guide-char "│"))
+
 ;; larger package setup files
 (load (locate-user-emacs-file "packages/general.el"))
 (load (locate-user-emacs-file "packages/evil.el"))

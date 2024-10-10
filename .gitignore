@@ -3,3 +3,4 @@ node_modules
 .config/zed/embeddings/
 .config/zed/conversations/
 .config/zed/.tmp*
+.config/emacs/places
