@@ -10,6 +10,7 @@
 
   (define-key evil-insert-state-map (kbd "C-g") 'evil-normal-state)
   (define-key evil-normal-state-map (kbd "0") 'evil-first-non-blank)
+  (define-key evil-normal-state-map (kbd "gc") 'comment-line)
   (define-key evil-normal-state-map (kbd "J") (lambda () (interactive) (evil-next-line 5)))
   (define-key evil-normal-state-map (kbd "K") (lambda () (interactive) (evil-previous-line 5)))
 
