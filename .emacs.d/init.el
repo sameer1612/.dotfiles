@@ -648,7 +648,6 @@
   (eval-after-load 'js-mode
 	'(add-hook 'js-mode-hook #'add-node-modules-path)))
 
-(load (locate-user-emacs-file "packages/evil.el"))
 
 ;;; RAINBOW DELIMITERS
 ;; The `rainbow-delimiters' package provides colorful parentheses, brackets, and braces
@@ -794,6 +793,7 @@
   ;; Load the Catppuccin theme without prompting for confirmation.
   (load-theme 'catppuccin :no-confirm))
 
+(load (locate-user-emacs-file "packages/evil.el"))
 
 ;;; UTILITARY FUNCTION TO INSTALL EMACS-KICK
 (defun ek/first-install ()

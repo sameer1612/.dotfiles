@@ -1,4 +1,3 @@
-;; EVIL
 (use-package evil
   :ensure t
   :defer t
@@ -50,10 +49,9 @@
   ;; Project management keybindings
   (evil-define-key 'normal 'global (kbd "<leader> p b") 'consult-project-buffer)
   (evil-define-key 'normal 'global (kbd "<leader> p p") 'project-switch-project)
-  (evil-define-key 'normal 'global (kbd "<leader> p f") 'project-find-file)
   (evil-define-key 'normal 'global (kbd "<leader> p g") 'project-find-regexp)
   (evil-define-key 'normal 'global (kbd "<leader> p k") 'project-kill-buffers)
-  (evil-define-key 'normal 'global (kbd "<leader> p D") 'project-dired)
+  (evil-define-key 'normal 'global (kbd "<leader> p d") 'project-dired)
 
   ;; Yank from kill ring
   (evil-define-key 'normal 'global (kbd "P") 'consult-yank-from-kill-ring)
@@ -124,7 +122,6 @@
   (evil-mode 1))
 
 
-;; EVIL COLLECTION
 (use-package evil-collection
   :after evil
   :defer t
@@ -133,3 +130,11 @@
   (evil-mode . evil-collection-init)
   :config
   (evil-collection-init))
+
+(use-package evil-replace-with-register
+  :after evil-collection
+  :defer t
+  :ensure t
+  :config
+  (setq evil-replace-with-register-key (kbd "gr"))
+  (evil-replace-with-register-install))
