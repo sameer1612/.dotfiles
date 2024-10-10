@@ -18,6 +18,8 @@
   (evil-define-key 'normal 'global (kbd "C-d") 'scroll-up)
   (evil-define-key 'normal 'global (kbd "C-u") 'scroll-down)
 
+
+
   ;; Keybindings for searching and finding files.
   (evil-define-key 'normal 'global (kbd "<leader> f f") 'project-find-file)
   (evil-define-key 'normal 'global (kbd "<leader> f G") 'consult-grep)
@@ -129,12 +131,7 @@
   :hook
   (evil-mode . evil-collection-init)
   :config
+  (setq evil-collection-want-find-usages-bindings nil)
+  (define-key evil-normal-state-map (kbd "J") (lambda () (interactive) (evil-next-line 5)))
+  (define-key evil-normal-state-map (kbd "K") (lambda () (interactive) (evil-previous-line 5)))
   (evil-collection-init))
-
-(use-package evil-replace-with-register
-  :after evil-collection
-  :defer t
-  :ensure t
-  :config
-  (setq evil-replace-with-register-key (kbd "gr"))
-  (evil-replace-with-register-install))
