@@ -4,7 +4,7 @@ font_family VictorMono Nerd Font
 bold_font auto
 italic_font auto
 bold_italic_font auto
-font_size 17.0
+font_size 18.0
 disable_ligatures never
 
 cursor_shape block
@@ -61,7 +61,7 @@ map kitty_mod+r next_layout
 map kitty_mod+m toggle_layout stack
 
 # BEGIN_KITTY_THEME
-# Challenger Deep
+# Royal
 include current-theme.conf
 # END_KITTY_THEME
 
