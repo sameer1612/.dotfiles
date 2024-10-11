@@ -144,6 +144,7 @@ export PATH="/Applications/Postgres.app/Contents/Versions/15/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/Users/sameer/.emacs.d/bin:$PATH"
 export PNPM_HOME="/Users/sameer/Library/pnpm"
+export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 
 export ANDROID_SDK_ROOT=~/Library/Android/sdk
 export ANDROID_HOME=~/Library/Android/sdk
