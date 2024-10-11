@@ -133,3 +133,8 @@
   (define-key evil-normal-state-map (kbd "J") (lambda () (interactive) (evil-next-line 5)))
   (define-key evil-normal-state-map (kbd "K") (lambda () (interactive) (evil-previous-line 5)))
   (evil-collection-init))
+
+(use-package evil-replace-with-register
+  :config
+  (setq evil-replace-with-register-key (kbd "gr"))
+  (evil-replace-with-register-install))
