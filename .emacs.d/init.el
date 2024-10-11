@@ -10,6 +10,8 @@
   :type 'boolean
   :group 'appearance)
 
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
 (load (locate-user-emacs-file "packages/emacs.el"))
 (load (locate-user-emacs-file "packages/window.el"))
 
@@ -333,6 +335,10 @@
   (add-to-list 'pulsar-pulse-functions 'diff-hl-next-hunk)
   (add-to-list 'pulsar-pulse-functions 'diff-hl-previous-hunk))
 
+(use-package doom-themes
+  :ensure t
+  :config
+  (load-theme 'doom-gruvbox t))
 
 (use-package doom-modeline
   :ensure t
@@ -384,18 +390,6 @@
   :config
   (nerd-icons-completion-mode)            ;; Activate nerd icons for completion interfaces.
   (add-hook 'marginalia-mode-hook #'nerd-icons-completion-marginalia-setup)) ;; Setup icons in the marginalia mode for enhanced completion display.
-
-
-(use-package catppuccin-theme
-  :ensure t
-  :config
-  (custom-set-faces
-   `(diff-hl-change ((t (:background unspecified :foreground ,(catppuccin-get-color 'blue))))))
-  (custom-set-faces
-   `(diff-hl-delete ((t (:background unspecified :foreground ,(catppuccin-get-color 'red))))))
-  (custom-set-faces
-   `(diff-hl-insert ((t (:background unspecified :foreground ,(catppuccin-get-color 'green))))))
-  (load-theme 'catppuccin :no-confirm))
 
 
 (defun ek/first-install ()

@@ -1,3 +1,8 @@
+(defun reverse-join-line ()
+  (interactive)
+  (next-line)
+  (join-line))
+
 (use-package evil
   :ensure t
   :defer t
@@ -7,6 +12,10 @@
   (setq evil-want-integration t)
   (setq evil-want-keybinding nil)
   :config
+	
+	(add-hook 'evil-insert-state-entry-hook (lambda () (send-string-to-terminal "\033[5 q")))
+	(add-hook 'evil-insert-state-exit-hook  (lambda () (send-string-to-terminal "\033[2 q")))
+	
   (evil-set-undo-system 'undo-redo)
 
   (setq evil-leader/in-all-states t)
@@ -17,6 +26,11 @@
 
   (evil-define-key 'normal 'global (kbd "C-d") 'scroll-up)
   (evil-define-key 'normal 'global (kbd "C-u") 'scroll-down)
+ 
+  (evil-define-key 'normal 'global (kbd "0") 'evil-first-non-blank)
+  (evil-define-key 'normal 'global (kbd "<leader> j") 'reverse-join-line)
+
+  (evil-define-key 'normal 'global (kbd "<leader> qq") 'save-buffers-kill-terminal)
 
   ;; Keybindings for searching and finding files.
   (evil-define-key 'normal 'global (kbd "<leader> f f") 'project-find-file)
@@ -82,13 +96,11 @@
       (revert-buffer t t t)))
 
   ;; LSP commands keybindings
-  (evil-define-key 'normal lsp-mode-map
-    ;; (kbd "gd") 'lsp-find-definition                ;; Emacs already provides a better gd
-    ;; (kbd "gr") 'lsp-find-references                ;; Emacs already provides a better gr
-    (kbd "<leader> c a") 'lsp-execute-code-action     ;; Execute code actions
-    (kbd "<leader> r n") 'lsp-rename                  ;; Rename symbol
-    (kbd "gI") 'lsp-find-implementation               ;; Find implementation
-    (kbd "<leader> l f") 'lsp-format-buffer)          ;; Format buffer via lsp
+  (evil-define-key 'normal 'global (kbd "<leader> l d") 'xref-find-definitions)
+  (evil-define-key 'normal 'global (kbd "<leader> l r") 'xref-find-references)
+  (evil-define-key 'normal 'global (kbd "<leader> l a") 'lsp-execute-code-action)
+  (evil-define-key 'normal 'global (kbd "<leader> r") 'lsp-rename)
+  (evil-define-key 'normal 'global (kbd "<leader> l f") 'lsp-format-buffer)
 
 
   (defun ek/lsp-describe-and-jump ()
@@ -138,3 +150,21 @@
   :config
   (setq evil-replace-with-register-key (kbd "gr"))
   (evil-replace-with-register-install))
+
+
+(defun my-jk ()
+  (interactive)
+  (let* ((initial-key ?j)
+         (final-key ?k)
+         (timeout 0.5)
+         (event (read-event nil nil timeout)))
+    (if event
+        ;; timeout met
+        (if (and (characterp event) (= event final-key))
+            (evil-normal-state)
+          (insert initial-key)
+          (push event unread-command-events))
+      ;; timeout exceeded
+      (insert initial-key))))
+
+(define-key evil-insert-state-map (kbd "j") 'my-jk)
