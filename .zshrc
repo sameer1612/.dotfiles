@@ -149,8 +149,8 @@ export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 export ANDROID_SDK_ROOT=~/Library/Android/sdk
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_AVD_HOME=~/.android/avd
-export PATH="$PATH":"$HOME/.pub-cache/bin"
-
+export PATH="$HOME/.pub-cache/bin:$PATH"
+export PATH="/Users/sameer/.cargo/bin:$PATH"
 
 eval "$(rbenv init - zsh)"
 [ -f "/Users/sameer/.ghcup/env" ] && source "/Users/sameer/.ghcup/env" # ghcup-env
