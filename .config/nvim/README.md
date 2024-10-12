@@ -1,9 +1,6 @@
-**This repo is supposed to used as config by NvChad users!**
+# NinjaVim 2.0
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+> Fine tuned using nvchad 🥷
 
-# Credits
+![image](https://github.com/sameer1612/.dotfiles/assets/39580073/f7943479-6ea5-454c-9cd6-0f61970b4571)
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
