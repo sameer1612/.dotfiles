@@ -13,6 +13,9 @@ return {
   },
   {
     "gbprod/substitute.nvim",
+    config = function()
+      require("substitute").setup()
+    end,
   },
   {
     "nvim-treesitter/nvim-treesitter",
