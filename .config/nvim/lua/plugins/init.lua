@@ -13,14 +13,8 @@ return {
     end,
   },
   {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      auto_install = true,
-    },
-  },
-  {
     "windwp/nvim-ts-autotag",
-    lazy = false,
+    event = { "BufReadPre", "BufNewFile" },
     opts = {
       enable_close_on_slash = true,
     },
