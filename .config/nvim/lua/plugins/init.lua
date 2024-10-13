@@ -12,13 +12,13 @@ return {
       vim.keymap.set("n", "s", require("substitute").operator, { noremap = true })
     end,
   },
-  {
-    "windwp/nvim-ts-autotag",
-    event = { "BufReadPre", "BufNewFile" },
-    opts = {
-      enable_close_on_slash = true,
-    },
-  },
+  -- {
+  --   "windwp/nvim-ts-autotag",
+  --   event = { "BufReadPre", "BufNewFile" },
+  --   opts = {
+  --     enable_close_on_slash = true,
+  --   },
+  -- },
   {
     "dhruvasagar/vim-prosession",
     dependencies = {

@@ -2,6 +2,7 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 local nomap = vim.keymap.del
+local opts = { noremap = true, silent = true }
 
 map("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 map("n", "0", "^", { desc = "Goto first non empty character in line" })
@@ -34,3 +35,12 @@ map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find buffers" })
 map("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
 map("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "Find symbols in the file" })
 map("n", "<leader>fp", "<cmd>Telescope prosession<cr>", { desc = "Find sessions" })
+
+-- Lsp mappings
+map("n", "<leader>rs", ":LspRestart<CR>", opts)
+map("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
+map("n", "<leader>lr", vim.lsp.buf.rename, opts)
+
+-- remove default mappings
+nomap("n", "<leader>n")
+nomap("n", "<leader>b")

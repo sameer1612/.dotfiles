@@ -14,7 +14,7 @@ return {
           enable = true,
         },
         indent = { enable = true },
-        autotag = { enable = false },
+        autotag = { enable = true },
         ensure_installed = {
           "json",
           "javascript",

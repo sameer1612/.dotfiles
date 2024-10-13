@@ -2,8 +2,7 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
-local servers =
-  { "html", "cssls", "ts_ls", "tailwindcss", "angularls", "emmet_ls", "pyright", "ruby_lsp", "graphql", "elixirls" }
+local servers = { "html", "cssls", "ts_ls", "tailwindcss", "angularls", "emmet_ls", "pyright", "ruby_lsp", "graphql" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 local opts = { noremap = true, silent = true }
@@ -39,7 +38,6 @@ local on_attach = function(client, bufnr)
   keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
 end
 
--- lsps with default config
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
@@ -48,9 +46,13 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- configuring single server, example: typescript
--- lspconfig.ts_ls.setup {
---   on_attach = nvlsp.on_attach,
---   on_init = nvlsp.on_init,
---   capabilities = nvlsp.capabilities,
--- }
+lspconfig.elixirls.setup {
+  capabilities = nvlsp.capabilities,
+  on_attach = on_attach,
+  on_init = nvlsp.on_init,
+  cmd = { "/Users/sameer/.elixir-ls/language_server.sh" },
+  single_file_support = true,
+  settings = {
+    dialyzerEnabled = true,
+  },
+}
