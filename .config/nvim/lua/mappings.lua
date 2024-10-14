@@ -41,6 +41,9 @@ map("n", "<leader>rs", ":LspRestart<CR>", opts)
 map("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
 map("n", "<leader>lr", vim.lsp.buf.rename, opts)
 
+-- substitute mappings
+map("n", "s", require("substitute").operator, { noremap = true })
+
 -- remove default mappings
 nomap("n", "<leader>n")
 nomap("n", "<leader>b")

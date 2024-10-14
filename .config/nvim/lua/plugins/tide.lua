@@ -1,6 +1,5 @@
 return {
   "jackMort/tide.nvim",
-  lazy = false,
   opts = {
     keys = {
       leader = ";",

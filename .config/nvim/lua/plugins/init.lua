@@ -7,10 +7,7 @@ return {
   },
   {
     "gbprod/substitute.nvim",
-    lazy = false,
-    config = function()
-      vim.keymap.set("n", "s", require("substitute").operator, { noremap = true })
-    end,
+    config = true,
   },
   -- {
   --   "windwp/nvim-ts-autotag",
