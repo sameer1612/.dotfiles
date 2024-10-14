@@ -44,6 +44,14 @@ map("n", "<leader>lr", vim.lsp.buf.rename, opts)
 -- substitute mappings
 map("n", "s", require("substitute").operator, { noremap = true })
 
+-- lspsaga mappings
+map("n", "<leader>lh", "<cmd>Lspsaga hover_doc<CR>", opts)
+map("n", "<leader>la", "<cmd>Lspsaga code_action<CR>", opts)
+map("n", "<leader>lt", "<cmd>Lspsaga peek_type_definition<CR>", opts)
+map("n", "<leader>ld", "<cmd>Lspsaga peek_definition<CR>", opts)
+map("n", "<leader>lf", "<cmd>Lspsaga finder<CR>", opts)
+map("n", "<leader>le", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
+
 -- remove default mappings
 nomap("n", "<leader>n")
 nomap("n", "<leader>b")
