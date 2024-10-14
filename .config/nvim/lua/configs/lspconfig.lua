@@ -2,7 +2,7 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
-local servers = { "html", "cssls", "ts_ls", "tailwindcss", "angularls", "emmet_ls", "pyright", "ruby_lsp", "graphql" }
+local servers = { "html", "cssls", "ts_ls", "tailwindcss", "emmet_ls", "pyright", "ruby_lsp" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 local opts = { noremap = true, silent = true }
