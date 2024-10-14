@@ -44,6 +44,16 @@ map("n", "<leader>lr", vim.lsp.buf.rename, opts)
 -- substitute mappings
 map("n", "s", require("substitute").operator, { noremap = true })
 
+-- lspconfig mappings
+map("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
+map("n", "gD", vim.lsp.buf.declaration, opts)
+map("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
+map("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts)
+map("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts)
+map("n", "<leader>lr", vim.lsp.buf.rename, opts)
+map("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
+map("n", "<leader>rs", ":LspRestart<CR>", opts)
+
 -- lspsaga mappings
 map("n", "<leader>lh", "<cmd>Lspsaga hover_doc<CR>", opts)
 map("n", "<leader>la", "<cmd>Lspsaga code_action<CR>", opts)
