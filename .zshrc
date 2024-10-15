@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/sameer/.zsh/completions:"* ]]; then export FPATH="/Users/sameer/.zsh/completions:$FPATH"; fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -173,3 +175,5 @@ PROMPT='%{$fg[cyan]%}%c$(git_prompt_info) %(!.%{$fg_bold[red]%}#.%{$fg_bold[red]
 source ~/.config/lf/scripts/lfcd.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+. "/Users/sameer/.deno/env"
+ZSH_DISABLE_COMPFIX=true
