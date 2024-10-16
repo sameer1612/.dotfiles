@@ -63,10 +63,12 @@ map("n", "<leader>lf", "<cmd>Lspsaga finder<CR>", opts)
 map("n", "<leader>le", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
 
 -- nvim-tree mappings
-map("n", "<leader>ee", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" })
-map("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" })
+map("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+map("n", "<leader>ef", "<cmd>NvimTreeFocus<CR>", { desc = "Focus in file explorer" })
+map("n", "<leader>ec", "<cmd>NvimTreeClose<CR>", { desc = "Collapse file explorer" })
 map("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
 
 -- remove default mappings
 nomap("n", "<leader>n")
+nomap("n", "<leader>e")
 nomap("n", "<leader>b")
