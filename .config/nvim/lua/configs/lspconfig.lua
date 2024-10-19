@@ -1,7 +1,7 @@
 local map = vim.keymap.set
 local lspconfig = require "lspconfig"
 
-local servers = { "html", "cssls", "ts_ls", "tailwindcss", "emmet_ls", "pyright", "ruby_lsp" }
+local servers = { "html", "cssls", "ts_ls", "tailwindcss", "emmet_ls", "pyright", "solargraph" }
 
 local on_attach = function()
   map("n", "<leader>lr", require "nvchad.lsp.renamer", { desc = "LSP Rename" })

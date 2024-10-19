@@ -54,7 +54,7 @@ return {
         "tailwindcss",
         "emmet_ls",
         "pyright",
-        "ruby_lsp",
+        "solargraph",
         "elixirls",
       },
     },
