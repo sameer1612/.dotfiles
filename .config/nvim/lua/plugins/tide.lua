@@ -2,8 +2,8 @@ return {
   "jackMort/tide.nvim",
   opts = {
     keys = {
-      leader = ";",
-      panel = ";",
+      leader = "\\",
+      panel = "\\",
       add_item = "a",
       delete = "d",
       clear_all = "x",

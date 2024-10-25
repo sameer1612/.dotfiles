@@ -32,7 +32,9 @@ alt-4 = 'workspace 4'
 alt-c = 'workspace c'
 alt-g = 'workspace g'
 alt-m = 'workspace m'
+alt-s = 'workspace s'
 alt-w = 'workspace w'
+alt-t = 'workspace t'
 
 alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
 alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
@@ -42,6 +44,8 @@ alt-shift-c = ['move-node-to-workspace c', 'workspace c']
 alt-shift-g = ['move-node-to-workspace g', 'workspace g']
 alt-shift-m = ['move-node-to-workspace m', 'workspace m']
 alt-shift-w = ['move-node-to-workspace w', 'workspace w']
+alt-shift-s = ['move-node-to-workspace s', 'workspace s']
+alt-shift-t = ['move-node-to-workspace t', 'workspace t']
 
 alt-r = 'mode resize'
 alt-e = 'balance-sizes'
@@ -67,7 +71,7 @@ run = 'layout floating'
 
 # Application to workspace mapping
 # 1 - coding
-# 2 - office communication
+# 2 - browser
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
 run = "move-node-to-workspace 1"
@@ -114,11 +118,11 @@ run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
-run = "move-node-to-workspace 3"
+run = "move-node-to-workspace t"
 
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
-run = "move-node-to-workspace 3"
+run = "move-node-to-workspace s"
 
 [[on-window-detected]]
 if.app-id = 'com.figma.Desktop'
@@ -139,6 +143,10 @@ run = "move-node-to-workspace m"
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
 run = "move-node-to-workspace m"
+
+[[on-window-detected]]
+if.app-id = "com.apple.iCal"
+run = "move-node-to-workspace c"
 
 
 [gaps]
