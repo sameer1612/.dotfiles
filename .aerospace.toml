@@ -29,23 +29,19 @@ alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
-alt-c = 'workspace c'
-alt-g = 'workspace g'
-alt-m = 'workspace m'
-alt-s = 'workspace s'
-alt-w = 'workspace w'
-alt-t = 'workspace t'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8'
 
 alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
 alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
 alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
 alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
-alt-shift-c = ['move-node-to-workspace c', 'workspace c']
-alt-shift-g = ['move-node-to-workspace g', 'workspace g']
-alt-shift-m = ['move-node-to-workspace m', 'workspace m']
-alt-shift-w = ['move-node-to-workspace w', 'workspace w']
-alt-shift-s = ['move-node-to-workspace s', 'workspace s']
-alt-shift-t = ['move-node-to-workspace t', 'workspace t']
+alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5']
+alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
+alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
+alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
 
 alt-r = 'mode resize'
 alt-e = 'balance-sizes'
@@ -118,11 +114,11 @@ run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
-run = "move-node-to-workspace t"
+run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
-run = "move-node-to-workspace s"
+run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
 if.app-id = 'com.figma.Desktop'
@@ -130,23 +126,23 @@ run = "move-node-to-workspace 4"
 
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
-run = "move-node-to-workspace w"
+run = "move-node-to-workspace 5"
 
 [[on-window-detected]]
 if.app-id = 'com.github.GitHubClient'
-run = "move-node-to-workspace g"
+run = "move-node-to-workspace 6"
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Outlook'
-run = "move-node-to-workspace m"
+run = "move-node-to-workspace 7"
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
-run = "move-node-to-workspace m"
+run = "move-node-to-workspace 7"
 
 [[on-window-detected]]
 if.app-id = "com.apple.iCal"
-run = "move-node-to-workspace c"
+run = "move-node-to-workspace 8"
 
 
 [gaps]
