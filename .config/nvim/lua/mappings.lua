@@ -29,6 +29,7 @@ map("v", "p", "P", { desc = "Paste without yanking" })
 map("n", "<leader>bd", "<cmd> %bd<CR>", { desc = "Close all buffers" })
 
 -- Telescope mappings
+map("n", "<leader><leader>", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
 map("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Find recent files" })
 map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find buffers" })
