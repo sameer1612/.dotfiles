@@ -8,10 +8,9 @@ config = {
 	window_background_opacity = 0.95,
 
 	color_scheme = "Everforest Dark Medium (Gogh)",
-	font = wezterm.font("VictorMono Nerd Font", { weight = "Medium" }),
-	font_size = 18,
+	font = wezterm.font("VictorMono Nerd Font", { weight = "Regular" }),
+	font_size = 20,
 
-	enable_tab_bar = true,
 	hide_tab_bar_if_only_one_tab = true,
 	tab_bar_at_bottom = true,
 	show_close_tab_button_in_tabs = false,

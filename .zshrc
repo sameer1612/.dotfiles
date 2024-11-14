@@ -4,9 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="sorin"
 
-zstyle ':omz:update' mode auto      # update automatically without asking
-
-ENABLE_CORRECTION="true"
+zstyle ':omz:update' mode auto
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
@@ -49,10 +47,10 @@ alias ta="tmux attach -t "
 alias tls="tmux ls"
 alias l="ls -l"
 alias la="ls -la"
+alias lf="yazi"
+alias lfcd="y"
 alias py="python3 "
-alias kssh="kitten ssh"
 alias nm="nodemon "
-alias enw="emacs -nw"
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -63,12 +61,8 @@ export PATH="/Users/sameer/softwares/flutter/bin:$PATH"
 export PATH="/opt/homebrew/opt/mongodb-community@4.4/bin:$PATH"
 export PATH="/Users/sameer/Applications/JetBrains Toolbox:$PATH"
 export PATH="$(npm prefix -g)/bin:$PATH"
-export PATH="$PNPM_HOME:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/15/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
-export PATH="/Users/sameer/.emacs.d/bin:$PATH"
-export PNPM_HOME="/Users/sameer/Library/pnpm"
-export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql@8.4/bin:$PATH"
 
 export ANDROID_SDK_ROOT=~/Library/Android/sdk
@@ -78,7 +72,6 @@ export PATH="$HOME/.pub-cache/bin:$PATH"
 export PATH="/Users/sameer/.cargo/bin:$PATH"
 
 eval "$(rbenv init - zsh)"
-# [ -f "/Users/sameer/.ghcup/env" ] && source "/Users/sameer/.ghcup/env" # ghcup-env
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -94,7 +87,6 @@ bindkey '^[^I' autosuggest-accept
 
 PROMPT='%{$fg[cyan]%}%c$(git_prompt_info) %(!.%{$fg_bold[red]%}#.%{$fg_bold[red]%}❯%{$fg_bold[yellow]%}❯%{$fg_bold[green]%}❯)%{$reset_color%} '
 
-# source ~/.config/lf/scripts/lfcd.sh
 source ~/.config/yazi/y.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -103,5 +95,3 @@ ZSH_DISABLE_COMPFIX=true
 # export PYENV_ROOT="$HOME/.pyenv"
 # [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
-#
-
