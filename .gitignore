@@ -4,3 +4,5 @@ node_modules
 .config/zed/conversations/
 .config/zed/.tmp*
 .config/emacs/places
+.config/yazi/flavors
+.config/yazi/plugins

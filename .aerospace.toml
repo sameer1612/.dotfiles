@@ -60,6 +60,11 @@ check-further-callbacks = true
 run = 'layout tiling'
 
 [[on-window-detected]]
+if.app-id = 'com.github.wez.wezterm'
+check-further-callbacks = true
+run = 'layout tiling'
+
+[[on-window-detected]]
 if.app-id = 'org.mozilla.com.zen.browser'
 if.window-title-regex-substring = 'Picture-in-Picture'
 check-further-callbacks = true
@@ -70,6 +75,10 @@ run = 'layout floating'
 # 2 - browser
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = 'com.github.wez.wezterm'
 run = "move-node-to-workspace 1"
 
 [[on-window-detected]]

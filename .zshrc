@@ -94,7 +94,8 @@ bindkey '^[^I' autosuggest-accept
 
 PROMPT='%{$fg[cyan]%}%c$(git_prompt_info) %(!.%{$fg_bold[red]%}#.%{$fg_bold[red]%}❯%{$fg_bold[yellow]%}❯%{$fg_bold[green]%}❯)%{$reset_color%} '
 
-source ~/.config/lf/scripts/lfcd.sh
+# source ~/.config/lf/scripts/lfcd.sh
+source ~/.config/yazi/y.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 ZSH_DISABLE_COMPFIX=true
@@ -104,6 +105,3 @@ ZSH_DISABLE_COMPFIX=true
 # eval "$(pyenv init -)"
 #
 
-
-export DYLD_LIBRARY_PATH="/opt/homebrew/opt/mysql@8.4/lib:$DYLD_LIBRARY_PATH"
-export LD_LIBRARY_PATH="/opt/homebrew/opt/mysql@8.4/lib:$LD_LIBRARY_PATH"
