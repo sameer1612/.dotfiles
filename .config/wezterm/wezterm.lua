@@ -4,10 +4,8 @@ local action = wezterm.action
 
 config = {
 	window_decorations = "RESIZE",
-	window_padding = {
-		bottom = 0,
-		right = 0,
-	},
+	window_padding = { bottom = 0, right = 0 },
+	window_background_opacity = 0.95,
 
 	color_scheme = "Everforest Dark Medium (Gogh)",
 	font = wezterm.font("VictorMono Nerd Font", { weight = "Medium" }),
@@ -21,6 +19,7 @@ config = {
 	show_tab_index_in_tab_bar = false,
 
 	scrollback_lines = 10000,
+	window_close_confirmation = "NeverPrompt",
 
 	keys = {
 		{ mods = "OPT", key = "LeftArrow", action = action.SendKey({ mods = "ALT", key = "b" }) },
@@ -34,6 +33,17 @@ config = {
 			action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 		},
 		{ mods = "CMD", key = "Enter", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
+		{
+			key = ",",
+			mods = "CMD",
+			action = action.SpawnCommandInNewTab({
+				cwd = os.getenv("WEZTERM_CONFIG_DIR"),
+				args = {
+					"/opt/homebrew/bin/nvim",
+					os.getenv("WEZTERM_CONFIG_FILE"),
+				},
+			}),
+		},
 	},
 }
 
