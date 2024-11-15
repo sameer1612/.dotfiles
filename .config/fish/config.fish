@@ -6,6 +6,7 @@ end
 abbr -a -- gst "git status"
 abbr -a -- gc "git branch | fzf --height=20% --reverse --info=inline | xargs git checkout"
 abbr -a -- gpull "git pull"
+abbr -a -- gco "git checkout"
 abbr -a -- gpush "git push"
 abbr -a -- rserver "rails s "
 abbr -a -- rconsole "rails c "
