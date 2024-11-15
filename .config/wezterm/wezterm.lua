@@ -7,7 +7,7 @@ config = {
 	window_padding = { bottom = 0, right = 0 },
 	window_background_opacity = 0.95,
 
-	color_scheme = "Everforest Dark Medium (Gogh)",
+	color_scheme = "Gruvbox dark, medium (base16)",
 	font = wezterm.font("VictorMono Nerd Font", { weight = "Regular" }),
 	font_size = 20,
 
