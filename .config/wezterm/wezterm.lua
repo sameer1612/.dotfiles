@@ -8,7 +8,7 @@ config = {
 
 	color_scheme = "Gruvbox dark, medium (base16)",
 	font = wezterm.font("VictorMono Nerd Font", { weight = "Regular" }),
-	font_size = 20,
+	font_size = 18,
 
 	hide_tab_bar_if_only_one_tab = true,
 	tab_bar_at_bottom = true,
