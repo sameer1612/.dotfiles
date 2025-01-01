@@ -7,7 +7,7 @@ config = {
 	window_padding = { bottom = 0, right = 0 },
 
 	color_scheme = "Gruvbox dark, medium (base16)",
-	font = wezterm.font("VictorMono Nerd Font", { weight = "Regular" }),
+	font = wezterm.font("VictorMono Nerd Font", { weight = "Medium" }),
 	font_size = 18,
 
 	hide_tab_bar_if_only_one_tab = true,
