@@ -17,7 +17,7 @@
   {
     "context": "Editor && vim_mode == insert && !menu",
     "bindings": {
-      "j k": "vim::SwitchToNormalMode",
+      "j k": ["vim::SwitchMode", "Normal"],
       "down": "menu::SelectNext"
     }
   },
@@ -30,27 +30,14 @@
       "J": ["workspace::SendKeystrokes", "5 j"],
       "K": ["workspace::SendKeystrokes", "5 k"],
       "space j": "vim::JoinLines",
-      "ctrl-h": "workspace::ActivatePaneLeft",
-      "ctrl-l": "workspace::ActivatePaneRight",
-      "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "space l d": "editor::GoToDefinition",
       "space l a": "editor::ToggleCodeActions",
       "space l r": "editor::FindAllReferences",
       "space l h": "editor::Hover"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
-    "bindings": {
-      "j k": "vim::SwitchToNormalMode",
-      "down": "menu::SelectNext"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-`": "workspace::ToggleBottomDock"
     }
   }
 ]

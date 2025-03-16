@@ -8,7 +8,7 @@ config = {
 
 	color_scheme = "Gruvbox dark, medium (base16)",
 	font = wezterm.font("VictorMono Nerd Font", { weight = "Medium" }),
-	font_size = 18,
+	font_size = 16,
 
 	hide_tab_bar_if_only_one_tab = true,
 	tab_bar_at_bottom = true,
@@ -25,11 +25,6 @@ config = {
 		{ mods = "CMD", key = "LeftArrow", action = action.SendKey({ mods = "CTRL", key = "a" }) },
 		{ mods = "CMD", key = "RightArrow", action = action.SendKey({ mods = "CTRL", key = "e" }) },
 		{ mods = "CMD", key = "Backspace", action = action.SendKey({ mods = "CTRL", key = "u" }) },
-		{
-			mods = "CMD|SHIFT",
-			key = "Enter",
-			action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
-		},
 		{ mods = "CMD", key = "Enter", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
 		{
 			key = ",",

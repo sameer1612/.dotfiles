@@ -6,6 +6,7 @@
                 "rules": [
                     {
                         "description": "Caps Lock -> Escape/Control",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "caps_lock" },

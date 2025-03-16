@@ -1,9 +1,10 @@
 {
-  "buffer_font_family": "Martian Mono",
-  "buffer_font_size": 14,
-  "buffer_line_height": "comfortable",
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "buffer_font_size": 15,
   "confirm_quit": true,
   "cursor_blink": false,
-  "theme": "Andromeda",
+  "theme": "Zed Legacy:  Andromeda",
   "vim_mode": true
 }

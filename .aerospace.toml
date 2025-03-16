@@ -65,7 +65,7 @@ check-further-callbacks = true
 run = 'layout tiling'
 
 [[on-window-detected]]
-if.app-id = 'org.mozilla.com.zen.browser'
+if.app-id = 'app.zen-browser.zen'
 if.window-title-regex-substring = 'Picture-in-Picture'
 check-further-callbacks = true
 run = 'layout floating'
@@ -110,7 +110,7 @@ if.app-id = 'company.thebrowser.Browser'
 run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
-if.app-id = 'org.mozilla.com.zen.browser'
+if.app-id = 'app.zen-browser.zen'
 run = "move-node-to-workspace 2"
 
 [[on-window-detected]]

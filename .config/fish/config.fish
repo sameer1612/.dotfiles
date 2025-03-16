@@ -1,7 +1,3 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
 # abbreviations
 abbr -a -- gst "git status"
 abbr -a -- gc "git branch | fzf --height=20% --reverse --info=inline | xargs git checkout"
