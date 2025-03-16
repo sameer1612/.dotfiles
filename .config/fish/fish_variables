@@ -36,5 +36,5 @@ SETUVAR fish_pager_color_description:yellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/Users/sameer/\x2ecargo/bin\x1e/Users/sameer/\x2epub\x2dcache/bin\x1e/opt/homebrew/opt/mysql\x408\x2e4/bin\x1e/opt/homebrew/sbin\x1e/opt/homebrew/opt/mongodb\x2dcommunity\x404\x2e4/bin\x1e/Users/sameer/softwares/flutter/bin\x1e/opt/homebrew/bin
+SETUVAR --export fish_user_paths:/Users/sameer/Applications/JetBrains\x20Toolbox\x1e/Users/sameer/\x2ecargo/bin\x1e/Users/sameer/\x2epub\x2dcache/bin\x1e/opt/homebrew/opt/mysql\x408\x2e4/bin\x1e/opt/homebrew/sbin\x1e/opt/homebrew/opt/mongodb\x2dcommunity\x404\x2e4/bin\x1e/Users/sameer/softwares/flutter/bin\x1e/opt/homebrew/bin
 SETUVAR nvm_default_version:20\x2e17\x2e0
