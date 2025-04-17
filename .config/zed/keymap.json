@@ -26,7 +26,7 @@
     "bindings": {
       "0": "vim::FirstNonWhitespace",
       "space w": "workspace::Save",
-      "space f f": "file_finder::Toggle",
+      "space space": "file_finder::Toggle",
       "J": ["workspace::SendKeystrokes", "5 j"],
       "K": ["workspace::SendKeystrokes", "5 k"],
       "space j": "vim::JoinLines",
@@ -38,13 +38,6 @@
       "space l a": "editor::ToggleCodeActions",
       "space l r": "editor::FindAllReferences",
       "space l h": "editor::Hover"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
-    "bindings": {
-      "j k": "vim::SwitchToNormalMode",
-      "down": "menu::SelectNext"
     }
   },
   {
