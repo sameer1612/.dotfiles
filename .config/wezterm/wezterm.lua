@@ -6,13 +6,13 @@ config = {
 	window_decorations = "RESIZE",
 	window_padding = { bottom = 0, right = 0 },
 
-	color_scheme = "Gruvbox dark, medium (base16)",
-	font = wezterm.font("VictorMono Nerd Font", { weight = "Medium" }),
+	-- color_scheme = "Gruvbox dark, medium (base16)",
+	-- font = wezterm.font("VictorMono Nerd Font", { weight = "Medium" }),
 	font_size = 16,
 
 	hide_tab_bar_if_only_one_tab = true,
 	tab_bar_at_bottom = true,
-	show_close_tab_button_in_tabs = false,
+	-- show_close_tab_button_in_tabs = false,
 	show_new_tab_button_in_tab_bar = false,
 	show_tab_index_in_tab_bar = false,
 
