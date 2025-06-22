@@ -1,5 +1,8 @@
 return {
   {
+    "github/copilot.vim",
+  },
+  {
     "neovim/nvim-lspconfig",
     config = function()
       require "configs.lspconfig"
@@ -37,7 +40,6 @@ return {
     event = "VeryLazy",
     dependencies = { "nvim-lint" },
     opts = {
-      ensure_installed = { "biome" },
       quiet_mode = true,
     },
   },

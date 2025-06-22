@@ -8,15 +8,6 @@ return {
     "saadparwaiz1/cmp_luasnip",
     "rafamadriz/friendly-snippets",
     "onsails/lspkind.nvim",
-    {
-      "Exafunction/codeium.vim",
-      cmd = "Codeium",
-      config = function()
-        vim.keymap.set("i", "<C-;>", function()
-          return vim.fn["codeium#Accept"]()
-        end, { expr = true })
-      end,
-    },
   },
   config = function()
     local cmp = require "cmp"
@@ -60,14 +51,12 @@ return {
         { name = "luasnip" },
         { name = "buffer" },
         { name = "path" },
-        { name = "codeium" },
       },
       formatting = {
         format = lspkind.cmp_format {
           mode = "symbol",
           maxwidth = 50,
           ellipsis_char = "...",
-          symbol_map = { Codeium = "" },
         },
       },
     }
