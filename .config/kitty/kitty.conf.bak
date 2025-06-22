@@ -1,9 +1,5 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
-font_family "VictorMono Nerd Font"
-bold_font auto
-italic_font auto
-bold_italic_font auto
 font_size 16.0
 disable_ligatures never
 
@@ -81,3 +77,10 @@ map ctrl+l kitten pass_keys.py neighboring_window right ctrl+l
 
 allow_remote_control yes
 listen_on unix:/tmp/mykitty
+
+# BEGIN_KITTY_FONTS
+font_family family="VictorMono Nerd Font Mono"
+bold_font auto
+italic_font auto
+bold_italic_font auto
+# END_KITTY_FONTS
