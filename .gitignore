@@ -6,3 +6,4 @@ node_modules
 .config/emacs/places
 .config/yazi/flavors
 .config/yazi/plugins
+.vscode
