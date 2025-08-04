@@ -5,15 +5,12 @@ return {
     require("mini.pairs").setup()
     require("mini.statusline").setup()
     require("mini.starter").setup({
-      footer = "",
       header = function()
-        local hour = tonumber(os.date('%H'))
-        local time_of_day =
-            (hour < 12 and "morning")
-            or (hour < 18 and "afternoon")
-            or "evening"
+        local hour = tonumber(os.date("%H"))
+        local time_of_day = (hour < 12 and "morning") or (hour < 18 and "afternoon") or "evening"
         return "Good " .. time_of_day .. ", Sameer"
       end,
+      footer = "",
     })
     require("mini.surround").setup()
   end,

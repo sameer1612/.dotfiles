@@ -1,5 +1,5 @@
 return {
   "catgoose/nvim-colorizer.lua",
   event = "BufReadPre",
-  config = true
+  config = true,
 }
