@@ -18,6 +18,7 @@ opt.showmode = false
 opt.signcolumn = "yes"
 opt.smartcase = true
 opt.smartindent = true
+opt.spell = true
 opt.spelllang = { "en" }
 opt.splitbelow = true
 opt.splitright = true
@@ -28,6 +29,7 @@ opt.undodir = vim.env.HOME .. "/.undodir"
 opt.undofile = true
 opt.undolevels = 100
 opt.wrap = false
+opt.updatetime = 250
+opt.completeopt = { "menu", "menuone", "noselect" }
 
 vim.g.loaded_perl_provider = 0
-vim.g.loaded_python3_provider = 0
