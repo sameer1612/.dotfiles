@@ -1,4 +1,7 @@
 return {
   "neanias/everforest-nvim",
-  config = true
+  config = function()
+    require("everforest").setup()
+    vim.cmd("colorscheme everforest")
+  end,
 }
