@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    -- { import = "sameer.plugins" }
+    { import = "sameer.plugins" }
   },
   checker = { enabled = true },
 })
