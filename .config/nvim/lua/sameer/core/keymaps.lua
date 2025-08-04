@@ -29,3 +29,6 @@ keymap.set("v", "<M-k>", ":m '<-2<CR>gv=gv", { desc = "Move line down" })
 keymap.set("v", "<M-k>", ":m '>+1<CR>gv=gv", { desc = "Move line up" })
 keymap.set("v", "p", "P", { desc = "Paste without yanking" })
 keymap.set("n", "<leader>bd", "<cmd> %bd<CR>", { desc = "Close all buffers" })
+
+keymap.set('n', 's', '<Nop>')
+keymap.set('x', 's', '<Nop>')
