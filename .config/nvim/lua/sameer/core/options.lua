@@ -30,6 +30,5 @@ opt.undofile = true
 opt.undolevels = 100
 opt.wrap = false
 opt.updatetime = 250
-opt.completeopt = { "menu", "menuone", "noselect" }
 
 vim.g.loaded_perl_provider = 0

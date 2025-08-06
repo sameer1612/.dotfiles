@@ -7,9 +7,9 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
-vim.api.nvim_create_autocmd("BufLeave", {
-  group = "NinjaAutocmds",
-  pattern = "*",
-  command = "wa",
-  nested = true,
-})
+-- vim.api.nvim_create_autocmd("BufLeave", {
+--   group = "NinjaAutocmds",
+--   pattern = "*",
+--   command = "wa",
+--   nested = true,
+-- })
