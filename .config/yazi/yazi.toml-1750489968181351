@@ -1,6 +1,0 @@
-[manager]
-ratio = [1, 2, 3]
-
-[plugin]
-prepend_previewers = [
-]
