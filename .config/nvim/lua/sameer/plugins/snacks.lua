@@ -5,11 +5,32 @@ return {
   priority = 1000,
   lazy = false,
   opts = {
-    indent = { enabled = true },
     dim = { enabled = true },
+    indent = { enabled = true },
+    quickfile = { enabled = true },
     picker = {
       enabled = true,
       layout = { preset = "vscode" },
+    },
+    scope = {
+      enabled = true,
+      keys = {
+        textobject = {
+          is = {
+            min_size = 2,
+            edge = false,
+            cursor = false,
+            treesitter = { blocks = { enabled = false } },
+            desc = "inner scope",
+          },
+          as = {
+            cursor = false,
+            min_size = 2,
+            treesitter = { blocks = { enabled = false } },
+            desc = "outer scope",
+          },
+        },
+      },
     },
   },
   keys = {
@@ -20,27 +41,26 @@ return {
       end,
       desc = "Grep",
     },
-
     {
-      "ff",
+      "fd",
       function()
         Snacks.picker.files()
       end,
-      { desc = "Find Files" },
+      desc = "Find Files",
     },
     {
       "<leader><leader>",
       function()
         Snacks.picker.files()
       end,
-      { desc = "Find Files" },
+      desc = "Find Files",
     },
     {
       "<leader>fa",
       function()
         Snacks.picker.files({ hidden = true, ignored = false })
       end,
-      { desc = "Find all files" },
+      desc = "Find all files",
     },
   },
   init = function()

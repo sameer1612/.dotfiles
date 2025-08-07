@@ -19,4 +19,7 @@ require("lazy").setup({
     { import = "sameer.plugins" },
   },
   checker = { enabled = true },
+  rocks = {
+    enabled = false,
+  },
 })
