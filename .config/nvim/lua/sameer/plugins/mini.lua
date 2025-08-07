@@ -2,9 +2,12 @@ return {
   "echasnovski/mini.nvim",
   config = function()
     require("mini.comment").setup()
+    require("mini.icons").setup()
     require("mini.operators").setup()
     require("mini.pairs").setup()
     require("mini.statusline").setup()
+    require("mini.surround").setup()
+
     require("mini.starter").setup({
       header = function()
         local hour = tonumber(os.date("%H"))
@@ -13,6 +16,5 @@ return {
       end,
       footer = "",
     })
-    require("mini.surround").setup()
   end,
 }
