@@ -35,7 +35,7 @@ return {
   },
   keys = {
     {
-      "<leader>fg",
+      "fg",
       function()
         Snacks.picker.grep()
       end,
@@ -56,11 +56,18 @@ return {
       desc = "Find Files",
     },
     {
-      "<leader>fa",
+      "fa",
       function()
         Snacks.picker.files({ hidden = true, ignored = false })
       end,
       desc = "Find all files",
+    },
+    {
+      "fb",
+      function()
+        Snacks.picker.buffers()
+      end,
+      desc = "Find Buffers",
     },
   },
   init = function()
