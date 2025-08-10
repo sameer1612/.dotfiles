@@ -9,7 +9,7 @@ return {
     {
       "mason-org/mason-lspconfig.nvim",
       opts = {
-        ensure_installed = { "lua_ls", "ts_ls", "pyright" },
+        ensure_installed = { "lua_ls", "ts_ls", "pyright", "ruby_lsp" },
       },
     },
   },
@@ -27,6 +27,7 @@ return {
     })
     vim.lsp.config("ts_ls", { capabilities = capabilities })
     vim.lsp.config("pyright", { capabilities = capabilities })
+    vim.lsp.config("ruby_lsp", { capabilities = capabilities })
 
     -- running rubocop in lsp mode for better performance
     vim.api.nvim_create_autocmd("FileType", {
@@ -42,17 +43,6 @@ return {
       pattern = "*.rb",
       callback = function()
         vim.lsp.buf.format()
-      end,
-    })
-
-    vim.api.nvim_create_autocmd("LspAttach", {
-      callback = function(ev)
-        local opts = { buffer = ev.buf }
-        vim.keymap.set("n", "ld", vim.lsp.buf.definition, opts)
-        vim.keymap.set("n", "lh", vim.lsp.buf.hover, opts)
-        vim.keymap.set("n", "lr", vim.lsp.buf.references, opts)
-        vim.keymap.set("n", "lre", vim.lsp.buf.rename, opts)
-        vim.keymap.set("n", "la", vim.lsp.buf.code_action, opts)
       end,
     })
   end,
