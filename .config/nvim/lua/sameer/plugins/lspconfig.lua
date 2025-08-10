@@ -34,7 +34,7 @@ return {
       callback = function()
         vim.lsp.start({
           name = "rubocop",
-          cmd = { "rubocop", "--lsp" },
+          cmd = { "bundle", "exec", "rubocop", "--lsp" },
         })
       end,
     })

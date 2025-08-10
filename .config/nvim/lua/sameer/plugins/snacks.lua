@@ -8,6 +8,7 @@ return {
     dim = { enabled = true },
     indent = { enabled = true },
     quickfile = { enabled = true },
+    statuscolumn = { enabled = true },
     picker = {
       enabled = true,
       layout = { preset = "vscode" },
