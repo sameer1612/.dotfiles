@@ -3,14 +3,7 @@ return {
   cmd = "Copilot",
   event = "InsertEnter",
   config = function()
-    require("copilot").setup({
-      suggestion = {
-        auto_trigger = true,
-      },
-      panel = {
-        auto_refresh = true,
-      },
-    })
+    require("copilot").setup({})
 
     vim.keymap.set("i", "<C-;>", function()
       if require("copilot.suggestion").is_visible() then

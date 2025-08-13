@@ -38,11 +38,12 @@ return {
     local keymap = vim.keymap
     local opts = { noremap = true, silent = true }
 
-    keymap.set("n", "lh", "<cmd>Lspsaga hover_doc<CR>", opts)
-    keymap.set("n", "la", "<cmd>Lspsaga code_action<CR>", opts)
-    keymap.set("n", "lt", "<cmd>Lspsaga peek_type_definition<CR>", opts)
-    keymap.set("n", "ld", "<cmd>Lspsaga peek_definition<CR>", opts)
-    keymap.set("n", "lf", "<cmd>Lspsaga finder<CR>", opts)
-    keymap.set("n", "le", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
+    keymap.set("n", "mh", "<cmd>Lspsaga hover_doc<CR>", opts)
+    keymap.set("n", "ma", "<cmd>Lspsaga code_action<CR>", opts)
+    keymap.set("n", "mt", "<cmd>Lspsaga peek_type_definition<CR>", opts)
+    keymap.set("n", "md", "<cmd>Lspsaga peek_definition<CR>", opts)
+    keymap.set("n", "mf", "<cmd>Lspsaga finder<CR>", opts)
+    keymap.set("n", "mre", "<cmd>Lspsaga rename<CR>", opts)
+    keymap.set("n", "me", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
   end,
 }
