@@ -10,7 +10,7 @@ return {
     appearance = {
       nerd_font_variant = "mono",
     },
-    completion = { documentation = { auto_show = true }, debounce = 100 },
+    completion = { documentation = { auto_show = true } },
     sources = {
       default = { "copilot", "lsp", "path", "snippets", "buffer" },
       providers = {

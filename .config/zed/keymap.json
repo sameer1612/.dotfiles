@@ -44,11 +44,12 @@
       "0": "vim::FirstNonWhitespace",
       "J": ["workspace::SendKeystrokes", "5 j"],
       "K": ["workspace::SendKeystrokes", "5 k"],
+      "s": ["workspace::SendKeystrokes", "g R"],
       "cmd-j": "vim::JoinLines",
       "g d": "editor::GoToDefinition",
       "g a": "editor::ToggleCodeActions",
       "g r": "editor::FindAllReferences",
-      "g n": "editor::Rename",
+      "g r e": "editor::Rename",
       "g h": "editor::Hover"
     }
   }

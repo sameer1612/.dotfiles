@@ -1,4 +1,14 @@
 {
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4"
+    },
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "o4-mini"
+    }
+  },
   "buffer_font_family": "VictorMono Nerd Font",
   "buffer_font_size": 15,
   "buffer_font_weight": 600,
@@ -9,13 +19,27 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
+  "languages": {
+    "JavaScript": {
+      "language_servers": ["tsgo"]
+    },
+    "TypeScript": {
+      "language_servers": ["tsgo"]
+    }
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "One Dark"
+    "dark": "Tokyo Night Storm"
+  },
+  "title_bar": {
+    "show_branch_icon": true
   },
   "toolbar": {
     "breadcrumbs": false,
     "quick_actions": false
+  },
+  "status_bar": {
+    "active_language_button": false
   }
 }
