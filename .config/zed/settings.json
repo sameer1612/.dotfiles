@@ -19,21 +19,14 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  "languages": {
-    "JavaScript": {
-      "language_servers": ["tsgo"]
-    },
-    "TypeScript": {
-      "language_servers": ["tsgo"]
-    }
-  },
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Tokyo Night Storm"
+    "dark": "Tokyo Night"
   },
   "title_bar": {
-    "show_branch_icon": true
+    "show_branch_icon": true,
+    "show_sign_in": false
   },
   "toolbar": {
     "breadcrumbs": false,
