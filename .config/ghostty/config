@@ -1,4 +1,4 @@
-theme = GruvboxDarkHard
+theme = DoomOne
 font-family = "VictorMono Nerd Font"
 font-size = 16
 mouse-hide-while-typing = true
@@ -7,6 +7,7 @@ shell-integration-features = no-cursor
 cursor-style = "block"
 cursor-style-blink = false
 window-padding-x = 8
+window-padding-y = 4
 macos-titlebar-style = "hidden"
 clipboard-trim-trailing-spaces = true
 window-height=25
