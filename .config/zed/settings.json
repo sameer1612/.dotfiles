@@ -10,8 +10,8 @@
     }
   },
   "buffer_font_family": "VictorMono Nerd Font",
-  "buffer_font_size": 15,
-  "buffer_font_weight": 600,
+  "buffer_font_size": 16,
+  "buffer_font_weight": 500,
   "cursor_blink": false,
   "relative_line_numbers": true,
   "ui_font_size": 16,
@@ -21,8 +21,8 @@
   },
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "Tokyo Night"
+    "light": "VSCode Light+",
+    "dark": "One Light"
   },
   "title_bar": {
     "show_branch_icon": true,
