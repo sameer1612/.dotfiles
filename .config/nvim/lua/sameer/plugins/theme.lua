@@ -4,8 +4,8 @@ return {
   lazy = false,
   priority = 1000,
   config = function()
-    vim.o.background = "light"
-    vim.cmd("colorscheme zenburned")
+    vim.o.background = "dark"
+    vim.cmd("colorscheme zenbones")
 
     local function disable_italics()
       for _, group in ipairs(vim.fn.getcompletion("", "highlight")) do
