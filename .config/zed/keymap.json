@@ -29,7 +29,8 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
-      "ctrl-`": "workspace::ToggleBottomDock"
+      "ctrl-`": "workspace::ToggleBottomDock",
+      "cmd-`": "terminal_panel::ToggleFocus"
     }
   },
   {

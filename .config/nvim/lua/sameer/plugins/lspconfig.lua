@@ -1,5 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
+  event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     {
       "folke/lazydev.nvim",
@@ -39,7 +40,7 @@ return {
     vim.lsp.config("ruby_lsp", { capabilities = capabilities })
 
     -- running rubocop in lsp mode for better performance
-    vim.api.nvim_create_autocmd("FileType", {
+    vim.api.nvim_create_autocmd("BufReadPre", {
       pattern = "ruby",
       callback = function()
         vim.lsp.start({
