@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
+SETUVAR --export HOMEBREW_NO_AUTO_UPDATE:1
 SETUVAR --export PYENV_ROOT:/Users/sameer/\x2epyenv
 SETUVAR --export VISUAL:nvim
 SETUVAR __fish_initialized:3800
