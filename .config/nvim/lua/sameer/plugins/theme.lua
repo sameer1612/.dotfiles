@@ -1,11 +1,10 @@
 return {
-  "zenbones-theme/zenbones.nvim",
-  dependencies = "rktjmp/lush.nvim",
+  "folke/tokyonight.nvim",
   lazy = false,
   priority = 1000,
   config = function()
     vim.o.background = "dark"
-    vim.cmd("colorscheme zenbones")
+    vim.cmd("colorscheme tokyonight-storm")
 
     local function disable_italics()
       for _, group in ipairs(vim.fn.getcompletion("", "highlight")) do
