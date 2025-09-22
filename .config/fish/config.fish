@@ -29,4 +29,4 @@ abbr -a -- pd "pnpm dev"
 abbr -a -- pb "pnpm build"
 abbr -a -- duh "du -h -d 0 */ | sort -h"
 abbr -a -- ytdl "yt-dlp -f bestaudio --no-playlist --extract-audio --audio-format mp3 -o \"~/Downloads/ytdlc/%(title)s.%(ext)s\" "
-
+abbr -a -- ur "uv run"

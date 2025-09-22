@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
 SETUVAR --export HOMEBREW_NO_AUTO_UPDATE:1
+SETUVAR --export --path PATH:/opt/homebrew/opt/openjdk\x4021/bin\x1e/Users/sameer/\x2elocal/bin\x1e/Users/sameer/\x2erbenv/shims\x1e/Users/sameer/\x2elocal/share/nvm/v20\x2e19\x2e0/bin\x1e/Users/sameer/\x2epyenv/bin\x1e/Library/PostgreSQL/17/bin\x1e/Users/sameer/\x2ecodeium/windsurf/bin\x1e/Users/sameer/\x2ebun/bin\x1e/Users/sameer/codes/softwares/flutter/bin\x1e/Users/sameer/Applications/JetBrains\x20Toolbox\x1e/Users/sameer/\x2ecargo/bin\x1e/Users/sameer/\x2epub\x2dcache/bin\x1e/opt/homebrew/opt/mysql\x408\x2e4/bin\x1e/opt/homebrew/sbin\x1e/opt/homebrew/opt/mongodb\x2dcommunity\x404\x2e4/bin\x1e/Users/sameer/softwares/flutter/bin\x1e/opt/homebrew/bin\x1e/usr/local/bin\x1e/System/Cryptexes/App/usr/bin\x1e/usr/bin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/local/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/appleinternal/bin\x1e/opt/X11/bin\x1e/Applications/Terminal\x2eapp/Contents/MacOS
 SETUVAR --export PYENV_ROOT:/Users/sameer/\x2epyenv
 SETUVAR --export VISUAL:nvim
 SETUVAR __fish_initialized:3800
