@@ -1,10 +1,10 @@
 return {
-  "folke/tokyonight.nvim",
+  "sainnhe/gruvbox-material",
   lazy = false,
   priority = 1000,
   config = function()
     vim.o.background = "dark"
-    vim.cmd("colorscheme tokyonight-storm")
+    vim.cmd("colorscheme gruvbox-material")
 
     local function disable_italics()
       for _, group in ipairs(vim.fn.getcompletion("", "highlight")) do

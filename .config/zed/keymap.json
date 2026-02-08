@@ -46,7 +46,7 @@
       "J": ["workspace::SendKeystrokes", "5 j"],
       "K": ["workspace::SendKeystrokes", "5 k"],
       "s": ["workspace::SendKeystrokes", "g R"],
-      "cmd-j": "vim::JoinLines",
+      "space j": "vim::JoinLines",
       "g d": "editor::GoToDefinition",
       "g a": "editor::ToggleCodeActions",
       "g r": "editor::FindAllReferences",
