@@ -30,3 +30,15 @@ abbr -a -- pb "pnpm build"
 abbr -a -- duh "du -h -d 0 */ | sort -h"
 abbr -a -- ytdl "yt-dlp -f bestaudio --no-playlist --extract-audio --audio-format mp3 -o \"~/Downloads/ytdlc/%(title)s.%(ext)s\" "
 abbr -a -- ur "uv run"
+
+abbr -a -- run "z qua && pipenv run python3 qcsystem/manage.py runserver"
+abbr -a -- ishell "pipenv run python3 qcsystem/manage.py shell -i ipython"
+
+abbr -a -- ssh-prod "aic ssh-ecs -e prod -a prod -s web"
+abbr -a -- ssh-qa "aic ssh-ecs -e staging -a qa -s web"
+abbr -a -- ssh-qa2 "aic ssh-ecs -e staging -a qa2 -s web"
+
+set -x DEBUG 1
+
+# Added by Antigravity
+fish_add_path /Users/sameer/.antigravity/antigravity/bin
