@@ -18,16 +18,8 @@ export PATH
 autoload -Uz compinit
 compinit -C -d "$HOME/.cache/zsh/.zcompdump"
 
-# ---- NVM (lazy loaded) ----
-export NVM_DIR="$HOME/.nvm"
-load_nvm() {
-  unset -f node npm npx nvm
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && source "/opt/homebrew/opt/nvm/nvm.sh"
-}
-node() { load_nvm; node "$@"; }
-npm()  { load_nvm; npm "$@"; }
-npx()  { load_nvm; npx "$@"; }
-nvm()  { load_nvm; nvm "$@"; }
+# ---- FNM (Node version manager) ----
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # ---- rbenv ----
 export RBENV_ROOT="$HOME/.rbenv"
@@ -138,3 +130,5 @@ alias yt='yarn test'
 alias ytdl='yt-dlp -f bestaudio --no-playlist --extract-audio --audio-format mp3 -o "~/Downloads/ytdlc/%(title)s.%(ext)s"'
 
 . "$HOME/.local/bin/env"
+
+export DEBUG=1
