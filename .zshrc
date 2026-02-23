@@ -10,6 +10,7 @@ path=(
   /opt/homebrew/opt/mongodb-community@4.4/bin
   /Applications/Postgres.app/Contents/Versions/15/bin
   ~/.config/yazi
+  /Library/PostgreSQL/17/bin/
   $path
 )
 export PATH
@@ -102,7 +103,7 @@ alias gco='git checkout'
 alias gpull="git pull"
 alias gpush="git push"
 alias gst="git status"
-alias ishell='pipenv run python3 qcsystem/manage.py shell -i ipython'
+alias ishell='uv run python3 qcsystem/manage.py shell -i ipython'
 alias l="eza -l"
 alias la="eza -la"
 alias lf="y"
@@ -116,7 +117,7 @@ alias py="python3"
 alias python="python3"
 alias rconsole='rails c'
 alias rserver='rails s'
-alias run='cd ~/codes/tl/aicrete/qualitycontrol && pipenv run python3 qcsystem/manage.py runserver'
+alias run='cd ~/codes/tl/aicrete/qualitycontrol && uv run python3 qcsystem/manage.py runserver'
 alias ssh-prod='aic ssh-ecs -e prod -a prod -s web'
 alias ssh-qa2='aic ssh-ecs -e staging -a qa2 -s web'
 alias ssh-qa='aic ssh-ecs -e staging -a qa -s web'
