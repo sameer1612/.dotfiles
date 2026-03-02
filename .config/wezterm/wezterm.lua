@@ -9,7 +9,7 @@ config = {
   initial_cols = 130,
   initial_rows = 35,
 
-  color_scheme = "GruvboxDark",
+  color_scheme = "tokyonight",
   font = wezterm.font("VictorMono Nerd Font", { weight = "Medium" }),
   font_size = 17,
 
