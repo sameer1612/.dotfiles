@@ -1,10 +1,10 @@
 return {
-  "folke/tokyonight.nvim",
+  "H4ckint0sh/nord.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.o.background = "dark"
-    vim.cmd("colorscheme tokyonight")
+    require("nord").setup({})
+    vim.cmd("colorscheme nord")
 
     local function disable_italics()
       for _, group in ipairs(vim.fn.getcompletion("", "highlight")) do

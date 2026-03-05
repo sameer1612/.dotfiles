@@ -22,4 +22,7 @@ require("lazy").setup({
   rocks = {
     enabled = false,
   },
+  install = {
+    colorscheme = { "nord" },
+  },
 })
