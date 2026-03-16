@@ -27,6 +27,11 @@ else
     LABEL="$MEETING_LABEL in ${H}h ${M}m"
   fi
 
-  sketchybar --set "$NAME" background.color=0x12ffffff
-  sketchybar --set "$NAME" label="$LABEL"
+  if [ "$DIFF_MIN" -le 10 ]; then
+    sketchybar --set "$NAME" label="" background.color=0x00000000
+    sketchybar --set "$NAME" label=""
+  else
+    sketchybar --set "$NAME" background.color=0x12ffffff
+    sketchybar --set "$NAME" label="$LABEL"
+  fi
 fi
