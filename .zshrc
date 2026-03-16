@@ -133,3 +133,8 @@ alias ytdl='yt-dlp -f bestaudio --no-playlist --extract-audio --audio-format mp3
 . "$HOME/.local/bin/env"
 
 export DEBUG=1
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/sameer/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
