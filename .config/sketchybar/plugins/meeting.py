@@ -1,10 +1,21 @@
 #!/usr/bin/env python3
+
 import json, os, subprocess, sys
 from datetime import datetime, timezone
 
 result = subprocess.run(
-    ["/usr/local/bin/ical", "list", "--from", "10 minutes ago", "--to", "in 6 hours", "-o", "json"],
-    capture_output=True, text=True,
+    [
+        "/usr/local/bin/ical",
+        "list",
+        "--from",
+        "10 minutes ago",
+        "--to",
+        "in 6 hours",
+        "-o",
+        "json",
+    ],
+    capture_output=True,
+    text=True,
 )
 
 NAME = os.environ.get("NAME", "meeting")
@@ -18,7 +29,9 @@ except json.JSONDecodeError:
 events = [e for e in events if not e.get("all_day", False)]
 
 if not events:
-    subprocess.run(["sketchybar", "--set", NAME, "label=", "background.color=0x00000000"])
+    subprocess.run(
+        ["sketchybar", "--set", NAME, "label=", "background.color=0x00000000"]
+    )
     sys.exit(0)
 
 event = events[0]
