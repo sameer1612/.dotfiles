@@ -7,8 +7,8 @@ sketchybar --bar position=top color=15ffffff
 default=(
   padding_left=0
   padding_right=0
-  icon.font="VictorMono Nerd Font:Regular:14.0"
-  label.font="VictorMono Nerd Font:Regular:14.0"
+  icon.font="JetBrainsMono Nerd Font:Regular:14.0"
+  label.font="JetBrainsMono Nerd Font:Regular:14.0"
   icon.color=0xaaffffff
   label.color=0xaaffffff
   label.padding_left=6
