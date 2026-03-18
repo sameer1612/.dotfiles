@@ -18,6 +18,10 @@ default=(
 )
 sketchybar --default "${default[@]}"
 
+sketchybar --add item battery right \
+  --set battery background.color=0x12ffffff \
+  --set battery update_freq=60 script="$PLUGIN_DIR/battery.sh"
+
 sketchybar --add item clock right \
   --set clock background.color=0x12ffffff \
   --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh"
@@ -25,6 +29,7 @@ sketchybar --add item clock right \
 sketchybar --add item meeting right \
   --set meeting background.color=0x12ffffff \
   --set meeting update_freq=60 script="$PLUGIN_DIR/meeting.py"
+
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
