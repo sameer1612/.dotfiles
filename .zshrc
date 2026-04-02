@@ -129,6 +129,7 @@ alias yd='yarn dev || yarn start'
 alias ys='yarn start'
 alias yt='yarn test'
 alias ytdl='yt-dlp -f bestaudio --no-playlist --extract-audio --audio-format mp3 -o "~/Downloads/ytdlc/%(title)s.%(ext)s"'
+alias zob='cd /Users/sameer/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/obsidian/'
 
 . "$HOME/.local/bin/env"
 

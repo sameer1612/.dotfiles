@@ -40,6 +40,7 @@ if not events:
 event = events[0]
 title = event.get("title", "").strip().rstrip("↻").strip()
 title = title[0].upper() + title[1:] if title else title
+title = title[:25] + "…" if len(title) > 25 else title
 
 # Parse ISO 8601 UTC timestamp — replace Z so Python <3.11 can handle it
 start_dt = datetime.fromisoformat(event["start_date"].replace("Z", "+00:00"))
