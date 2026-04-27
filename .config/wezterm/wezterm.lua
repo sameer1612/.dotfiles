@@ -9,7 +9,7 @@ config = {
   initial_cols = 130,
   initial_rows = 35,
 
-  color_scheme = "nord",
+  color_scheme = "catppuccin-mocha",
   font = wezterm.font("JetBrainsMono Nerd Font"),
   font_size = 17,
 

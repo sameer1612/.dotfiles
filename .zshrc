@@ -11,6 +11,7 @@ path=(
   /Applications/Postgres.app/Contents/Versions/15/bin
   ~/.config/yazi
   /Library/PostgreSQL/17/bin/
+  /opt/homebrew/opt/openjdk/bin
   $path
 )
 export PATH
@@ -106,6 +107,7 @@ alias gst="git status"
 alias ishell='cd ~/codes/tl/aicrete/qualitycontrol && uv run --env-file .env python3 qcsystem/manage.py shell_plus'
 alias l="eza -l"
 alias la="eza -la"
+alias ll="eza -l"
 alias lf="y"
 alias ls="eza"
 alias nv="nvim"
