@@ -9,9 +9,10 @@ config = {
   initial_cols = 130,
   initial_rows = 35,
 
-  color_scheme = "catppuccin-mocha",
+  color_scheme = "DoomOne",
   font = wezterm.font("JetBrainsMono Nerd Font"),
-  font_size = 17,
+  font_size = 16,
+  default_cursor_style = "SteadyBar",
 
   hide_tab_bar_if_only_one_tab = true,
   tab_bar_at_bottom = true,

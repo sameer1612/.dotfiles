@@ -1,10 +1,9 @@
 return {
-  "H4ckint0sh/nord.nvim",
+  'NTBBloodbath/doom-one.nvim',
   lazy = false,
   priority = 1000,
   config = function()
-    require("nord").setup({})
-    vim.cmd("colorscheme nord")
+    vim.cmd("colorscheme doom-one")
 
     local function disable_italics()
       for _, group in ipairs(vim.fn.getcompletion("", "highlight")) do

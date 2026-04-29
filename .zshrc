@@ -133,8 +133,6 @@ alias yt='yarn test'
 alias ytdl='yt-dlp -f bestaudio --no-playlist --extract-audio --audio-format mp3 -o "~/Downloads/ytdlc/%(title)s.%(ext)s"'
 alias zob='cd /Users/sameer/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/obsidian/'
 
-. "$HOME/.local/bin/env"
-
 export DEBUG=1
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/sameer/.docker/completions $fpath)
