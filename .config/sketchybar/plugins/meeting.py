@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 
 result = subprocess.run(
     [
-        "/usr/local/bin/ical",
+        "/opt/homebrew/bin/ical",
         "list",
         "--from",
         "10 minutes ago",

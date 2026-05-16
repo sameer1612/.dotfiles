@@ -9,16 +9,27 @@ path=(
   /opt/homebrew/opt/mysql@8.4/bin
   /opt/homebrew/opt/mongodb-community@4.4/bin
   /Applications/Postgres.app/Contents/Versions/15/bin
-  ~/.config/yazi
+  $HOME/.config/yazi
   /Library/PostgreSQL/17/bin/
   /opt/homebrew/opt/openjdk/bin
   $path
 )
 export PATH
 
-# Enable completion
+# Enable completions
+mkdir -p "$HOME/.cache/zsh"
 autoload -Uz compinit
-compinit -C -d "$HOME/.cache/zsh/.zcompdump"
+if [[ -f "$HOME/.cache/zsh/.zcompdump" ]]; then
+  compinit -C -d "$HOME/.cache/zsh/.zcompdump"
+else
+  compinit -d "$HOME/.cache/zsh/.zcompdump"
+fi
+
+if [[ ! -f "$HOME/.cache/zsh/.zcompdump.zwc" || \
+  "$HOME/.cache/zsh/.zcompdump" -nt "$HOME/.cache/zsh/.zcompdump.zwc" ]]; then
+    zcompile "$HOME/.cache/zsh/.zcompdump"
+fi
+
 
 # ---- FNM (Node version manager) ----
 eval "$(fnm env --use-on-cd --shell zsh)"
@@ -46,9 +57,9 @@ export VISUAL=nvim
 
 # Git branch in prompt (fast, no oh-my-zsh)
 git_branch() {
-  local branch
-  branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null) || return
-  echo " %F{yellow}($branch)%f"
+  local ref
+  ref=$(command git symbolic-ref --short HEAD 2>/dev/null) || return
+  echo " %F{yellow}($ref)%f"
 }
 PROMPT='%F{cyan}%~%f$(git_branch) '
 
@@ -79,9 +90,6 @@ fi
 # ---- fzf ----
 if [ -f /opt/homebrew/opt/fzf/shell/key-bindings.zsh ]; then
   source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
-fi
-if [ -f /opt/homebrew/opt/fzf/shell/completion.zsh ]; then
-  source /opt/homebrew/opt/fzf/shell/completion.zsh
 fi
 export FZF_DEFAULT_OPTS='
   --height 40%
@@ -134,8 +142,4 @@ alias ytdl='yt-dlp -f bestaudio --no-playlist --extract-audio --audio-format mp3
 alias zob='cd /Users/sameer/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/obsidian/'
 
 export DEBUG=1
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/sameer/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions
+

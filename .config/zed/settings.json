@@ -1,9 +1,26 @@
 {
-  "icon_theme": {
-    "mode": "system",
-    "light": "Zed (Default)",
-    "dark": "Zed (Default)",
+  "project_panel": {
+    "dock": "left"
   },
+  "collaboration_panel": {
+    "button": false
+  },
+  "diff_view_style": "unified",
+  "autosave": "on_window_change",
+  "agent_servers": {
+    "github-copilot-cli": {
+      "default_config_options": {
+        "model": "claude-sonnet-4.6"
+      },
+      "favorite_config_option_values": {
+        "model": [
+          "claude-sonnet-4.6"
+        ]
+      },
+      "type": "registry"
+    }
+  },
+  "icon_theme": "Zed (Default)",
   "colorize_brackets": true,
   "buffer_line_height": {
     "custom": 2.0,
@@ -14,32 +31,28 @@
   },
   "show_edit_predictions": true,
   "edit_predictions": {
+    "provider": "copilot",
     "mode": "eager",
   },
-  "features": {
-    "edit_prediction_provider": "copilot",
-  },
   "agent": {
+    "dock": "right",
+    "sidebar_side": "right",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-haiku-4.5",
     },
     "model_parameters": [],
   },
-  "buffer_font_family": "VictorMono Nerd Font",
-  "buffer_font_size": 15.0,
-  "buffer_font_weight": 600.0,
+  "buffer_font_family": "Victor Mono",
+  "buffer_font_size": 14.0,
+  "buffer_font_weight": 500.0,
   "cursor_blink": false,
   "relative_line_numbers": "enabled",
-  "ui_font_size": 16,
+  "ui_font_size": 15.0,
   "vim_mode": true,
-  "theme": {
-    "mode": "light",
-    "light": "VSCode Light+",
-    "dark": "Gruvbox Dark",
-  },
+  "theme": "Ayu Mirage",
   "title_bar": {
-    "show_branch_icon": true,
+    "show_branch_status_icon": true,
     "show_sign_in": false,
   },
   "toolbar": {
