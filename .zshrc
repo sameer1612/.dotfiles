@@ -5,7 +5,6 @@ path=(
   /opt/homebrew/sbin
   $HOME/.cargo/bin
   $HOME/.pub-cache/bin
-  $HOME/softwares/flutter/bin
   /opt/homebrew/opt/mysql@8.4/bin
   /opt/homebrew/opt/mongodb-community@4.4/bin
   /Applications/Postgres.app/Contents/Versions/15/bin
@@ -17,18 +16,8 @@ path=(
 export PATH
 
 # Enable completions
-mkdir -p "$HOME/.cache/zsh"
 autoload -Uz compinit
-if [[ -f "$HOME/.cache/zsh/.zcompdump" ]]; then
-  compinit -C -d "$HOME/.cache/zsh/.zcompdump"
-else
-  compinit -d "$HOME/.cache/zsh/.zcompdump"
-fi
-
-if [[ ! -f "$HOME/.cache/zsh/.zcompdump.zwc" || \
-  "$HOME/.cache/zsh/.zcompdump" -nt "$HOME/.cache/zsh/.zcompdump.zwc" ]]; then
-    zcompile "$HOME/.cache/zsh/.zcompdump"
-fi
+compinit
 
 
 # ---- FNM (Node version manager) ----

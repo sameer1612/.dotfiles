@@ -6,11 +6,11 @@ config = {
   window_decorations = "RESIZE",
   window_padding = { bottom = 0, right = 0 },
 
-  initial_cols = 130,
-  initial_rows = 35,
+  initial_cols = 120,
+  initial_rows = 40,
 
   color_scheme = "DoomOne",
-  font = wezterm.font("JetBrainsMono Nerd Font"),
+  font = wezterm.font("SFMono Nerd Font"),
   font_size = 16,
   default_cursor_style = "SteadyBar",
 

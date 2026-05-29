@@ -1,5 +1,13 @@
 {
+  "git_panel": {
+    "button": true
+  },
+  "sticky_scroll": {
+    "enabled": false
+  },
+  "hover_popover_sticky": true,
   "project_panel": {
+    "sticky_scroll": false,
     "dock": "left"
   },
   "collaboration_panel": {
@@ -45,12 +53,12 @@
   },
   "buffer_font_family": "Victor Mono",
   "buffer_font_size": 14.0,
-  "buffer_font_weight": 500.0,
+  "buffer_font_weight": 550.0,
   "cursor_blink": false,
-  "relative_line_numbers": "enabled",
+  "relative_line_numbers": "disabled",
   "ui_font_size": 15.0,
   "vim_mode": true,
-  "theme": "Ayu Mirage",
+  "theme": "VSCode Light+",
   "title_bar": {
     "show_branch_status_icon": true,
     "show_sign_in": false,
@@ -65,7 +73,7 @@
   "terminal": {
     "copy_on_select": true,
     "font_size": 13,
-    "font_weight": 500,
+    "font_weight": 500.0,
     "toolbar": {
       "breadcrumbs": false,
     },
