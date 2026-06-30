@@ -3,11 +3,6 @@ typeset -U path PATH   # remove duplicates automatically
 path=(
   /opt/homebrew/bin
   /opt/homebrew/sbin
-  $HOME/.cargo/bin
-  $HOME/.pub-cache/bin
-  /opt/homebrew/opt/mysql@8.4/bin
-  /opt/homebrew/opt/mongodb-community@4.4/bin
-  /Applications/Postgres.app/Contents/Versions/15/bin
   $HOME/.config/yazi
   /Library/PostgreSQL/17/bin/
   /opt/homebrew/opt/openjdk/bin
@@ -88,20 +83,21 @@ export FZF_DEFAULT_OPTS='
   --cycle
 '
 
+# Alias expansion
+source $HOME/.zsh-expand/zsh-expand.plugin.zsh
+
 # ---- Syntax Highlighting (must be last) ----
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ---- Aliases ----
-alias bd='bun dev || bun start'
+alias bd='bun dev'
 alias cls="clear"
-alias dc='docker compose'
 alias duh='du -h -d 0 */ | sort -h'
 alias gc='git branch | fzf --height=20% --reverse --info=inline | xargs git checkout'
 alias gco='git checkout'
 alias gpull="git pull"
 alias gpush="git push"
 alias gst="git status"
-alias ishell='cd ~/codes/tl/aicrete/qualitycontrol && uv run --env-file .env python3 qcsystem/manage.py shell_plus'
 alias l="eza -l"
 alias la="eza -la"
 alias ll="eza -l"
@@ -112,23 +108,13 @@ alias pb='pnpm build'
 alias pd='pnpm dev'
 alias pi='pnpm install'
 alias pip="pip3"
-alias py="python3"
 alias python="python3"
-alias rconsole='rails c'
-alias rserver='rails s'
-alias run='cd ~/codes/tl/aicrete/qualitycontrol && uv run --env-file .env python3 qcsystem/manage.py runserver'
-alias ssh-prod='aic ssh-ecs -e prod -a prod -s web'
-alias ssh-qa2='aic ssh-ecs -e staging -a qa2 -s web'
-alias ssh-qa='aic ssh-ecs -e staging -a qa -s web'
 alias tr2='tree -a -L 2'
-alias ur='uv run'
 alias vi="nvim"
-alias yb='yarn build'
-alias yd='yarn dev || yarn start'
+alias vim="nvim"
+alias yd='yarn dev'
 alias ys='yarn start'
 alias yt='yarn test'
-alias ytdl='yt-dlp -f bestaudio --no-playlist --extract-audio --audio-format mp3 -o "~/Downloads/ytdlc/%(title)s.%(ext)s"'
 alias zob='cd /Users/sameer/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/obsidian/'
-
-export DEBUG=1
-
+# Project related aliases
+source $HOME/.officerc
