@@ -7,6 +7,7 @@ path=(
   /Library/PostgreSQL/17/bin/
   /opt/homebrew/opt/openjdk/bin
   $path
+  $(go env GOPATH)/bin
 )
 export PATH
 
