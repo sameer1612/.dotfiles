@@ -17,16 +17,8 @@ export PATH
 autoload -Uz compinit
 compinit
 
-
-# ---- FNM (Node version manager) ----
-eval "$(fnm env --use-on-cd --shell zsh)"
-
-# ---- rbenv ----
-export RBENV_ROOT="$HOME/.rbenv"
-if command -v rbenv >/dev/null; then
-  eval "$(rbenv init - zsh)"
-fi
-
+# For mise-en-place
+eval "$(mise activate zsh)"
 
 # Useful options
 setopt autocd
