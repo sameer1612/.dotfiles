@@ -3,11 +3,13 @@ typeset -U path PATH   # remove duplicates automatically
 path=(
   /opt/homebrew/bin
   /opt/homebrew/sbin
-  $HOME/.config/yazi
+  $HOME/.local/bin
   /Library/PostgreSQL/17/bin/
   /opt/homebrew/opt/openjdk/bin
-  $path
+  $HOME/.config/yazi
+  $HOME/.bun/bin
   $(go env GOPATH)/bin
+  $path
 )
 export PATH
 
