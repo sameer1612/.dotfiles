@@ -1,6 +1,6 @@
 theme = Nord
 font-family = "VictorMono Nerd Font"
-font-size = 16
+font-size = 15
 font-thicken = true
 mouse-hide-while-typing = true
 copy-on-select = "clipboard"
@@ -9,7 +9,6 @@ cursor-style = "block"
 cursor-style-blink = false
 window-padding-x = 8
 window-padding-y = 4
-macos-titlebar-style = "tabs"
 clipboard-trim-trailing-spaces = true
-window-height=25
-window-width=100
+window-height=35
+window-width=120

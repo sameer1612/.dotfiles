@@ -1,27 +1,31 @@
 {
+  "format_on_save": "on",
+  "vim": {
+    "use_smartcase_find": true,
+  },
   "git_panel": {
-    "button": true
+    "button": true,
   },
   "sticky_scroll": {
-    "enabled": false
+    "enabled": false,
   },
   "hover_popover_sticky": true,
   "project_panel": {
     "sticky_scroll": false,
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
   "diff_view_style": "unified",
   "autosave": "on_window_change",
   "agent_servers": {
     "github-copilot-cli": {
       "default_config_options": {
-        "model": "claude-haiku-4.5"
+        "model": "claude-haiku-4.5",
       },
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "icon_theme": "Zed (Default)",
   "colorize_brackets": true,
@@ -35,7 +39,7 @@
   "show_edit_predictions": true,
   "edit_predictions": {
     "provider": "copilot",
-    "mode": "eager",
+    "mode": "subtle",
   },
   "agent": {
     "dock": "right",
@@ -47,7 +51,7 @@
     "model_parameters": [],
   },
   "buffer_font_family": "Victor Mono",
-  "buffer_font_size": 14.0,
+  "buffer_font_size": 16.0,
   "buffer_font_weight": 550.0,
   "cursor_blink": false,
   "relative_line_numbers": "disabled",
@@ -67,7 +71,7 @@
   },
   "terminal": {
     "copy_on_select": true,
-    "font_size": 13,
+    "font_size": 13.0,
     "font_weight": 500.0,
     "toolbar": {
       "breadcrumbs": false,
@@ -79,11 +83,42 @@
     },
   },
   "languages": {
-    "TypeScript": {
-      "language_servers": ["tsgo", "vtsls"],
-    },
     "Python": {
       "language_servers": ["ty", "basedpyright"],
+    },
+    "TypeScript": {
+      "language_servers": [
+        "typescript-ls",
+        "!vtsls",
+        "!typescript-language-server",
+      ],
+    },
+    "TSX": {
+      "language_servers": [
+        "typescript-ls",
+        "!vtsls",
+        "!typescript-language-server",
+        "emmet-language-server",
+        "tailwindcss-language-server",
+      ],
+    },
+    "JavaScript": {
+      "language_servers": [
+        "typescript-ls",
+        "!vtsls",
+        "!typescript-language-server",
+      ],
+    },
+  },
+  "lsp": {
+    "vscode-css-language-server": {
+      "settings": {
+        "css": {
+          "lint": {
+            "unknownAtRules": "ignore",
+          },
+        },
+      },
     },
   },
 }

@@ -11,7 +11,7 @@ config = {
 
   color_scheme = "DoomOne",
   font = wezterm.font("SFMono Nerd Font"),
-  font_size = 16,
+  font_size = 15,
   default_cursor_style = "SteadyBar",
 
   hide_tab_bar_if_only_one_tab = true,

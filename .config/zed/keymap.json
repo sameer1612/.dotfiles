@@ -18,8 +18,8 @@
       "cmd-7": ["pane::ActivateItem", 6],
       "cmd-8": ["pane::ActivateItem", 7],
       "cmd-9": ["pane::ActivateItem", 8],
-      "cmd-shift-t": "pane::ReopenClosedItem"
-    }
+      "cmd-shift-t": "pane::ReopenClosedItem",
+    },
   },
   {
     "context": "Workspace",
@@ -30,14 +30,14 @@
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
       "ctrl-`": "workspace::ToggleBottomDock",
-      "cmd-`": "terminal_panel::ToggleFocus"
-    }
+      "cmd-`": "terminal_panel::ToggleFocus",
+    },
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "j k": "vim::SwitchToNormalMode"
-    }
+      "j k": "vim::SwitchToNormalMode",
+    },
   },
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
@@ -51,37 +51,37 @@
       "g a": "editor::ToggleCodeActions",
       "g r": "editor::FindAllReferences",
       "g r e": "editor::Rename",
-      "g h": "editor::Hover"
-    }
+      "g h": "editor::Hover",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-b": "agent::ToggleFocus"
-    }
+      "cmd-shift-b": "agent::ToggleFocus",
+    },
   },
   {
     "context": "Workspace",
     "unbind": {
-      "cmd-?": "agent::ToggleFocus"
-    }
+      "cmd-?": "agent::ToggleFocus",
+    },
   },
   {
     "context": "Workspace",
     "unbind": {
-      "cmd-shift-b": "outline_panel::ToggleFocus"
-    }
+      "cmd-shift-b": "outline_panel::ToggleFocus",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-b": "workspace::ToggleRightDock"
-    }
+      "cmd-shift-b": "workspace::ToggleRightDock",
+    },
   },
   {
     "context": "Workspace",
     "unbind": {
-      "cmd-r": "workspace::ToggleRightDock"
-    }
-  }
+      "cmd-r": "workspace::ToggleRightDock",
+    },
+  },
 ]
