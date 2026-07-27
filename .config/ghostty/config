@@ -1,7 +1,5 @@
-theme = Nord
 font-family = "VictorMono Nerd Font"
 font-size = 15
-font-thicken = true
 mouse-hide-while-typing = true
 copy-on-select = "clipboard"
 shell-integration-features = no-cursor
@@ -12,3 +10,4 @@ window-padding-y = 4
 clipboard-trim-trailing-spaces = true
 window-height=35
 window-width=120
+keybind = cmd+enter=new_split:down

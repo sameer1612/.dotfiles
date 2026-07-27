@@ -85,7 +85,6 @@ source $HOME/.zsh-expand/zsh-expand.plugin.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ---- Aliases ----
-alias bd='bun dev'
 alias cls="clear"
 alias code="code-insiders"
 alias duh='du -h -d 0 */ | sort -h'
