@@ -95,17 +95,11 @@ alias l="ls -l"
 alias la="ls -la"
 alias ll="ls -l"
 alias nv="nvim"
-alias pb='pnpm build'
-alias pd='pnpm dev'
-alias pi='pnpm install'
 alias pip="pip3"
 alias python="python3"
 alias tr2='tree -a -L 2'
 alias vi="nvim"
-# alias vim="nvim"
-alias yd='yarn dev'
-alias ys='yarn start'
-alias yt='yarn test'
+alias vim="nvim"
 
 # Project related aliases
 source $HOME/.officerc
