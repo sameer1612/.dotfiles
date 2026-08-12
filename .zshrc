@@ -1,14 +1,9 @@
 # ---- PATHS ----
 typeset -U path PATH   # remove duplicates automatically
 path=(
-  /opt/homebrew/bin
-  /opt/homebrew/sbin
   $HOME/.local/bin
-  /Library/PostgreSQL/17/bin/
-  /opt/homebrew/opt/openjdk/bin
-  $HOME/.config/yazi
   $HOME/.bun/bin
-  $(go env GOPATH)/bin
+  $HOME/.homebrew/bin
   $path
 )
 export PATH
@@ -17,8 +12,12 @@ export PATH
 autoload -Uz compinit
 compinit
 
-# For mise-en-place
-eval "$(mise activate zsh)"
+# -------- For mise-en-place --------
+eval "$(/Users/sameer.kumar2/.local/bin/mise activate zsh)"
+
+# bun completions
+[ -s "/Users/sameer.kumar2/.bun/_bun" ] && source "/Users/sameer.kumar2/.bun/_bun"
+
 
 # Useful options
 setopt autocd
@@ -59,7 +58,7 @@ setopt inc_append_history   # write immediately
 eval "$(zoxide init zsh)"
 
 # ---- Autosuggestions ----
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ---- yazi file manager ----
 if [ -f "$HOME/.dotfiles/.config/yazi/y.sh" ]; then
@@ -82,7 +81,7 @@ export FZF_DEFAULT_OPTS='
 source $HOME/.zsh-expand/zsh-expand.plugin.zsh
 
 # ---- Syntax Highlighting (must be last) ----
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ---- Aliases ----
 alias cls="clear"
@@ -93,11 +92,9 @@ alias gco='git checkout'
 alias gpull="git pull"
 alias gpush="git push"
 alias gst="git status"
-alias l="eza -l"
-alias la="eza -la"
-alias ll="eza -l"
-alias lf="y"
-alias ls="eza"
+alias l="ls -l"
+alias la="ls -la"
+alias ll="ls -l"
 alias nv="nvim"
 alias pb='pnpm build'
 alias pd='pnpm dev'
@@ -106,10 +103,10 @@ alias pip="pip3"
 alias python="python3"
 alias tr2='tree -a -L 2'
 alias vi="nvim"
-alias vim="nvim"
+# alias vim="nvim"
 alias yd='yarn dev'
 alias ys='yarn start'
 alias yt='yarn test'
-alias zob='cd /Users/sameer/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/obsidian/'
+
 # Project related aliases
 source $HOME/.officerc
