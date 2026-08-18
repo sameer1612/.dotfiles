@@ -16,6 +16,10 @@
       "action": "activate",
       "bundleId": "com.microsoft.edgemac"
     },
+    "option+e": {
+      "action": "activate",
+      "bundleId": "com.microsoft.edgemac"
+    },
     "option+c": {
       "action": "activate",
       "bundleId": "com.microsoft.teams2"
