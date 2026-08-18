@@ -19,7 +19,7 @@ return {
     {
       "mason-org/mason-lspconfig.nvim",
       opts = {
-        ensure_installed = { "lua_ls", "ts_ls", "pyright", "ruby_lsp", "tailwindcss" },
+        ensure_installed = { "lua_ls", "ts_ls", "pyright", "tailwindcss" },
       },
     },
   },
@@ -37,23 +37,5 @@ return {
     })
     vim.lsp.config("ts_ls", { capabilities = capabilities })
     vim.lsp.config("pyright", { capabilities = capabilities })
-    vim.lsp.config("ruby_lsp", { capabilities = capabilities })
-
-    -- running rubocop in lsp mode for better performance
-    vim.api.nvim_create_autocmd("BufReadPre", {
-      pattern = "ruby",
-      callback = function()
-        vim.lsp.start({
-          name = "rubocop",
-          cmd = { "bundle", "exec", "rubocop", "--lsp" },
-        })
-      end,
-    })
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      pattern = "*.rb",
-      callback = function()
-        vim.lsp.buf.format()
-      end,
-    })
   end,
 }
