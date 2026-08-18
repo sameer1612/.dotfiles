@@ -1,0 +1,32 @@
+{
+  "shortcuts": {
+    "option+g": {
+      "action": "activate",
+      "bundleId": "com.github.GitHubClient"
+    },
+    "option+t": {
+      "action": "activate",
+      "bundleId": "com.mitchellh.ghostty"
+    },
+    "option+v": {
+      "action": "activate",
+      "bundleId": "com.microsoft.VSCode"
+    },
+    "option+a": {
+      "action": "activate",
+      "bundleId": "com.microsoft.edgemac"
+    },
+    "option+c": {
+      "action": "activate",
+      "bundleId": "com.microsoft.teams2"
+    },
+    "option+m": {
+      "action": "activate",
+      "bundleId": "com.apple.mail"
+    },
+    "option+o": {
+      "action": "activate",
+      "bundleId": "md.obsidian"
+    }
+  }
+}
