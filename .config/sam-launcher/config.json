@@ -6,7 +6,7 @@
     },
     "option+t": {
       "action": "activate",
-      "bundleId": "com.mitchellh.ghostty"
+      "bundleId": "net.kovidgoyal.kitty"
     },
     "option+v": {
       "action": "activate",
@@ -18,7 +18,7 @@
     },
     "option+e": {
       "action": "activate",
-      "bundleId": "com.microsoft.edgemac"
+      "bundleId": "com.anthropic.claudefordesktop"
     },
     "option+c": {
       "action": "activate",
