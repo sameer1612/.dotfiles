@@ -10,7 +10,7 @@
     },
     "option+v": {
       "action": "activate",
-      "bundleId": "com.microsoft.VSCode"
+      "bundleId": "com.microsoft.VSCodeInsiders"
     },
     "option+a": {
       "action": "activate",

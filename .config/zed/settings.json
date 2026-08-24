@@ -84,7 +84,7 @@
   },
   "languages": {
     "Python": {
-      "language_servers": ["ty", "basedpyright"],
+      "language_servers": ["ty", "!basedpyright"],
     },
     "TypeScript": {
       "language_servers": [
