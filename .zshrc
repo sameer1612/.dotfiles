@@ -103,3 +103,6 @@ alias vim="nvim"
 
 # Project related aliases
 source $HOME/.officerc
+
+# Stop auto update on every brew run
+export HOMEBREW_NO_AUTO_UPDATE=1
