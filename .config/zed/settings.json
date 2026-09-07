@@ -1,4 +1,8 @@
 {
+  "preview_tabs": {
+    "enable_preview_file_from_code_navigation": false,
+    "enable_preview_from_project_panel": false
+  },
   "format_on_save": "on",
   "vim": {
     "use_smartcase_find": true,
@@ -38,7 +42,7 @@
   },
   "show_edit_predictions": true,
   "edit_predictions": {
-    "provider": "copilot",
+    "provider": "none",
     "mode": "subtle",
   },
   "agent": {
