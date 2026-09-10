@@ -84,6 +84,7 @@ source $HOME/.zsh-expand/zsh-expand.plugin.zsh
 source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ---- Aliases ----
+alias bs="bun start"
 alias cls="clear"
 alias duh='du -h -d 0 */ | sort -h'
 alias gc='git branch | fzf --height=20% --reverse --info=inline | xargs git checkout'
