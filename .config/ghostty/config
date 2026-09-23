@@ -12,5 +12,3 @@ clipboard-trim-trailing-spaces = true
 window-height=40
 window-width=140
 keybind = cmd+enter=new_split:down
-macos-titlebar-style = hidden
-theme="Doom One"
