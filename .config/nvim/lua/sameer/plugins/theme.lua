@@ -3,7 +3,7 @@ return {
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd("colorscheme doom-one")
+    -- vim.cmd("colorscheme doom-one")
 
     local function disable_italics()
       for _, group in ipairs(vim.fn.getcompletion("", "highlight")) do

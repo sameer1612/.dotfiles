@@ -55,7 +55,7 @@
     "model_parameters": [],
   },
   "buffer_font_family": "Victor Mono",
-  "buffer_font_size": 16.0,
+  "buffer_font_size": 14.0,
   "buffer_font_weight": 550.0,
   "cursor_blink": false,
   "relative_line_numbers": "disabled",
@@ -74,6 +74,7 @@
     "active_language_button": false,
   },
   "terminal": {
+    "cursor_shape": "bar",
     "copy_on_select": true,
     "font_size": 13.0,
     "font_weight": 500.0,

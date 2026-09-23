@@ -84,4 +84,10 @@
       "cmd-r": "workspace::ToggleRightDock",
     },
   },
+  {
+    "context": "Editor",
+    "unbind": {
+      "cmd-\\": "pane::SplitRight"
+    }
+  }
 ]
