@@ -99,6 +99,8 @@ alias nv="nvim"
 alias pip="pip3"
 alias python="python3"
 alias tr2='tree -a -L 2'
+alias ur="uv run"
+alias urt="uv run task"
 alias vi="nvim"
 alias vim="nvim"
 
