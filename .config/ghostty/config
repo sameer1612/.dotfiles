@@ -1,6 +1,9 @@
-font-family = "VictorMono Nerd Font"
-font-size = 16
+theme = "Builtin Light"
+font-family = "SF Mono Terminal"
+font-variation = wght=450
+font-size = 14
 font-thicken = true
+font-thicken-strength = 1
 mouse-hide-while-typing = true
 copy-on-select = "clipboard"
 shell-integration-features = no-cursor
