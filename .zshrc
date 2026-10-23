@@ -84,7 +84,10 @@ source $HOME/.zsh-expand/zsh-expand.plugin.zsh
 source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ---- Aliases ----
+alias bd="bun dev"
+alias br="bun run"
 alias bs="bun start"
+alias bt="bun run test"
 alias c="claude"
 alias cls="clear"
 alias dc="docker compose"
