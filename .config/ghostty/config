@@ -1,7 +1,6 @@
 theme = "Builtin Light"
-font-family = "SF Mono Terminal"
-font-variation = wght=450
-font-size = 14
+font-family = "Iosevka Term"
+font-size = 16
 font-thicken = true
 font-thicken-strength = 1
 mouse-hide-while-typing = true
@@ -14,4 +13,5 @@ window-padding-y = 4
 clipboard-trim-trailing-spaces = true
 window-height=40
 window-width=140
+window-save-state = always
 keybind = cmd+enter=new_split:down
