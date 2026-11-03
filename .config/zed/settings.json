@@ -1,4 +1,6 @@
 {
+  "disable_ai": true,
+  "document_folding_ranges": "on",
   "preview_tabs": {
     "enable_preview_file_from_code_navigation": false,
     "enable_preview_from_project_panel": false
@@ -46,8 +48,10 @@
     "mode": "subtle",
   },
   "agent": {
+    "threads_sidebar": {
+      "position": "right"
+    },
     "dock": "right",
-    "sidebar_side": "right",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-haiku-4.5",
